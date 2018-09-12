@@ -1,0 +1,28 @@
+include ../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    include head/head
+  +b.BODY(class=pageClass)
+    include ../ui/notice/notice
+    include ../ui/loader/loader
+
+    .wrapper
+      .page-content
+        include header/header
+        block content
+      include footer/footer
+
+    include ../windows/windows
+
+    // scripts
+    
+    // build:js js/vendor.min.js
+    script(src='libs/jquery/jquery-3.3.1.min.js')
+    //endbuild
+
+    script(src='js/main.js')

@@ -1,0 +1,28 @@
+body
+  &.body-index
+    main
+      width: 1170px
+      max-width: 100%
+      margin: 0 auto
+      overflow: hidden
+      padding-left: 15px
+      padding-right: 15px
+      box-sizing: border-box
+
+.products
+  padding-top: 30px
+  @include grid($flex-wrap:wrap, $gutter:10px)
+  &__item
+    text-align: center
+    @include grid-col($col:4, $gutter:10px)
+
+
+@media only screen and (max-width : 992px)
+  .products
+    &__item
+      @include grid-col($col:6, $gutter:10px)
+
+@media only screen and (max-width : 767px)
+  .products
+    &__item
+      @include grid-col($col:12, $gutter:10px)
