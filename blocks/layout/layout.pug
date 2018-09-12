@@ -10,13 +10,17 @@ html(lang="ru")
   +b.BODY(class=pageClass)
     include ../ui/notice/notice
     include ../ui/loader/loader
-
+    
     .wrapper
       .page-content
+        // шапка
         include header/header
+        // контент
         block content
+      // футер
       include footer/footer
 
+    // Модальные окна
     include ../windows/windows
 
     // scripts

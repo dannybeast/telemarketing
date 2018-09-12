@@ -1,0 +1,76 @@
+body
+  {
+	background: $bg-color;
+	font-family: $main-font;
+	letter-spacing: 0.3px;
+	overflow-x: hidden;
+	max-width: 100%;
+	min-width: 320px;
+  	font-size: $main-font-size;
+
+	}
+	::selection
+	{
+		background-color: $accent;
+		color: $black;
+	}
+
+
+.fancybox-bg{
+	background: url('../img/modal-bg.jpg') center no-repeat;
+	background-size: cover;
+	filter: blur(10px);
+	left: -50px;
+	right: -50px;
+	top: -50px;
+	bottom: -50px;
+	opacity: 1 !important;
+}
+.fancybox-close-small{
+	width: 24px;
+	height: 23px;
+	top: -35px !important;
+	background: url('../img/close-modal.png') center no-repeat;
+	background-size: contain;
+	svg{
+		display: none;
+	}
+}
+
+.bottom-btn{
+	text-align: center;
+	margin-top: 50px;
+}
+	
+	.container{
+		&.custom{
+			max-width: $custom-container;
+		}
+	}
+
+	main{
+		position: relative;
+	}
+// FOOTER к низу
+*{margin: 0;
+	padding: 0;
+	outline: none;
+}
+html,
+body
+{	height: 100%;}
+
+.wrapper
+{	display: flex;
+	flex-direction: column;
+	height: 100%;}
+
+.page-content
+{	flex: 1 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;}
+
+footer
+	{flex: 0 0 auto;}
+// end

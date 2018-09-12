@@ -7,8 +7,6 @@ var gulp = require('gulp'),
 		plumber = require('gulp-plumber'),
 		prefix = require('gulp-autoprefixer'),
 		imagemin = require('gulp-imagemin'),
-    bourbon    = require("bourbon").includePaths,
-    bitters    = require("bourbon-bitters").includePaths,
 		browserSync = require('browser-sync').create();
 
 var useref = require('gulp-useref'),
@@ -41,11 +39,10 @@ gulp.task('pug', function() {
 
 //sass compile
 gulp.task('sass', function() {
-	return gulp.src(paths.blocks +'*.sass')
+	return gulp.src(paths.blocks +'*.scss')
 		.pipe(plumber())
 		.pipe(sass({
       sourcemaps: true,
-      includePaths: [bourbon, bitters]
     }).on('error', sass.logError))
 		.pipe(prefix({
 			browsers: ['last 10 versions'],
@@ -69,8 +66,7 @@ gulp.task('scripts', function() {
 //watch
 gulp.task('watch', function() {
 	gulp.watch(paths.blocks + '**/*.pug', ['pug']);
-	gulp.watch(paths.blocks + '**/*.sass', ['sass']);
-  gulp.watch('node_modules/bourbon-bitters/*.*', ['bourbon-bitters']);
+	gulp.watch(paths.blocks + '**/*.scss', ['sass']);
 	gulp.watch(paths.blocks + '**/*.js', ['scripts']);
 });
 

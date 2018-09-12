@@ -11,8 +11,5 @@
     "**/.*",
     "node_modules",
     "bower_components"
-  ],
-  "dependencies": {
-    "mdi": "^1.9.33"
-  }
+  ]
 }
