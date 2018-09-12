@@ -2,7 +2,7 @@
 @import "_base/variables";
 @import "_base/fonts";
 
-// libs
+// packages
 @import "../node_modules/reset-css/sass/reset";
 @import "_base/grid";
 
@@ -12,17 +12,20 @@
 @import "layout/footer/footer";
 @import "windows/windows";
 
-
 // ui
 @import "ui/btn/btn";
 @import "ui/notice/notice";
 @import "ui/loader/loader";
 
-
 // items
-
+@import "items/gray-item/gray-item"; // for section/analytics
 
 // sections
-
+@import "sections/intro/intro"; 
+@import "sections/analytics/analytics"; 
+@import "sections/intro-banner/intro-banner"; 
+@import "sections/leader/leader"; 
+@import "sections/partners/partners"; 
+@import "sections/potential/potential";
 
 // pages
