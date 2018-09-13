@@ -1,3 +1,50 @@
 .intro-banner{
-    
+    &__main-wrap{
+        width: 90%;
+        position: relative;
+    }
+    &__image-wrap{
+        width: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 483px;
+            // min-width: 1292px;
+        }
+    }
+    &__card-wrap{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $accent;
+        padding: 40px 35px;
+    }
+    &__text{
+        font-size: 32px;
+        color: $black;
+        line-height: 38px;
+        font-weight: 300;
+        padding-bottom: 70px;
+    }
+    &__link{
+        font-size: 20px;
+        color: $black;
+        text-decoration: none;
+        line-height: 38px;
+        font-weight: 400;
+        position: relative;
+        padding-right: 30px;
+    }
+    .intro-banner__link::after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 4px);
+        width: 19px;
+        height: 11px;
+        background: url("../img/icons/line-arrow-black.svg") center no-repeat;
+    }
 }

@@ -1,0 +1,11 @@
+mixin intro-banner(image, link)
+  +b.SECTION.intro-banner
+    +e.main-wrap
+      +e.image-wrap
+        img(src=image)
+      +e.card-wrap
+        if block
+          block
+        else
+          +e.H3.text Введите текст
+        +e.A.link(href=link) Узнать больше

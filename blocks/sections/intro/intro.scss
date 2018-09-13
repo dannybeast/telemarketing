@@ -1,3 +1,19 @@
 .intro{
+    font-weight: 300;
+    &__title-block{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: left;
+    }
+    &__main-title{
+        color: $black;
+        font-size: 55.5px;
+        line-height: 76px;
+    }
+    &__second-title{
+        color: $warm-grey-two;
+        font-size: 55.5px;
+        line-height: 76px;
+    }
     
 }
