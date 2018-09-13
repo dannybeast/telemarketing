@@ -3233,6 +3233,20 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
+  .header .lang:hover {
+    position: relative; }
+    .header .lang:hover .header__dropdown {
+      display: block;
+      position: absolute;
+      top: 60px;
+      color: #000; }
+      .header .lang:hover .header__dropdown .case {
+        padding: 20px;
+        background: #f7f7f7; }
+        .header .lang:hover .header__dropdown .case:hover {
+          background: #e0e0e0; }
+  .header__dropdown {
+    display: none; }
   .header__button {
     height: 60px;
     width: 60px;
