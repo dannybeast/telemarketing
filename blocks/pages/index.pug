@@ -1,4 +1,5 @@
 extends ../layout/layout
+include ../ui/banner/banner
 
 block variables 
   - var pageClass = 'body-index';
@@ -9,9 +10,27 @@ block variables
 block content
   +b.MAIN(role='main')
     include ../sections/intro/intro
-    include ../sections/intro-banner/intro-banner
+    +intro-banner("img/index-img.jpg", "#")
+      +e.H3.text Мир не стоит на 
+        br
+        |месте и ваш
+        br
+        |бизнес должен
+        br 
+        |развиваться
+        br 
+        |вместе с ним
     include ../sections/potential/potential
     include ../sections/analytics/analytics
     include ../sections/leader/leader
     include ../sections/partners/partners
-    include ../sections/intro-banner/intro-banner
+    +intro-banner("img/index-img4.jpg", "#")
+      +e.H3.text Cообщество 
+        br
+        |профессионалов 
+        br
+        |в области 
+        br
+        |маркетинговых 
+        br
+        |коммуникаций
