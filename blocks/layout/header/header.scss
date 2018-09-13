@@ -10,6 +10,7 @@
     left: 0;
     right: 0;
     z-index: 15;
+
     &__right{
         display: flex;
         align-items: center;
@@ -18,6 +19,7 @@
     &__button{
         height: 60px;
         width: 60px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -38,6 +40,9 @@
     }
     &__navigation{
         display: flex;
+        &.open{
+            display: flex;
+        }
     }
     &__list{
         list-style: none;
@@ -55,6 +60,55 @@
         line-height: 60px;
         &:hover{
             background: $black-five;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1080px){
+
+    .header{
+        &__logo{
+            margin-right: 10px;
+        }
+        .nav-icon-wrap{
+            display: flex;
+        }
+        &__navigation{
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background: $black-three;
+            padding: 15px 0px;
+            display: none;
+        }
+        &__list{
+            width: 100%;
+        }
+        &__item{
+            display: block;
+        }
+        &__link{
+            width: 100%;
+            height: inherit;
+            line-height: inherit;
+            padding: 15px 30px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    .header{
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        &__right{
+            margin-right: -15px;
+        }
+        &__link{
+            padding: 15px;
         }
     }
 }
