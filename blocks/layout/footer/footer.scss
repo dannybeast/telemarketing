@@ -4,12 +4,13 @@
   padding: 72px 0 39px 0;
   color:$black-three;
   &__top{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
   }
   &__column{
     width: 20%;
+    margin-bottom: 40px;
   }
   &__list{
     list-style: none;
@@ -38,6 +39,7 @@
 
   &__bottom{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 14px;
     a{
@@ -55,6 +57,10 @@
     margin-right: 80px;
     a{
       margin: 0 20px 0;
+      white-space: nowrap;
+      &:first-child{
+        margin-left: 0;
+      }
       &:last-child{
         margin-right: 0;
       }
@@ -67,6 +73,32 @@
       &:last-child{
         margin-right: 0;
       }
+    }
+  }
+}
+
+@media only screen and (max-width:992px){
+  .footer{
+    padding-top: 35px;
+    &__top{
+      display: none;
+    }
+    &__bottom{
+      justify-content: center;
+    }
+    &__copyright{
+      margin-bottom: 15px;
+      margin-right: 0;
+      width: 100%;
+      text-align: center;
+    }
+    &__contacts{
+      margin-right: 0;
+    }
+    &__social{
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
     }
   }
 }
