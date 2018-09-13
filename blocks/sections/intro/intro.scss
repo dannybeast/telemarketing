@@ -9,11 +9,19 @@
         color: $black;
         font-size: 55.5px;
         line-height: 76px;
-    }
-    &__second-title{
-        color: $warm-grey-two; 
-        font-size: 55.5px;
-        line-height: 76px;
+        span{
+            color: $warm-grey-two;
+            display: block;
+        }
     }
     
+}
+
+@media only screen and (max-width:767px){
+    .intro{
+        &__main-title{
+            font-size: 36px;
+            line-height: 1.43;
+        }
+    }
 }

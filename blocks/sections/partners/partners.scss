@@ -1,5 +1,5 @@
 .partners{
-    margin: $section-margin 0;
+    margin: $section-margin 0 120px;
     &__title{
         font-size: $section-title-size;
         text-align: center;
@@ -47,6 +47,8 @@
 }
 @media only screen and (max-width:767px){
     .partners{
+        margin-bottom: 60px;
+        
         &__title{
             margin-bottom: 30px;
         }

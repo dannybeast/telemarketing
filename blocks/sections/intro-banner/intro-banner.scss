@@ -25,8 +25,15 @@
         display: inline-block;
         font-weight: 300;
     }
+    &__main-wrap{
+        width: 90%;
+        position: relative;
+    }
     &--black{
         background: $black;
+        .intro-banner__main-wrap{
+            width: 80%;
+        }
         &:after{
             top:initial;
             right: 70px;
@@ -34,10 +41,6 @@
             height: 500px;
             opacity: 0.2;
         }
-    }
-    &__main-wrap{
-        width: 80%;
-        position: relative;
     }
     &__image-wrap{
         width: 100%;
@@ -71,6 +74,23 @@
     .btn-link{
         &:hover{
             opacity: 0.7;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:767px){
+    .intro-banner{
+        &__text{
+            font-size: 18px;
+            line-height: 1.43;
+            padding-bottom: 30px;
+        }
+        &--black{
+            .intro-banner__main-wrap{
+                width: 90%;
+            }
         }
     }
 

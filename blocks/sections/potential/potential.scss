@@ -17,7 +17,7 @@
     }
     &__tab-link-item{
         margin: 0 25px 0 0;
-        width: 18%;
+        width: calc(18% - 25px);
         &.ui-state-active{
             .potential__tab-link{
                 border-color:$azul;
@@ -37,6 +37,8 @@
         display: block;
         border-bottom: 2px solid $white-six;
         padding-bottom: 32px;
+        height:74px;
+        overflow: hidden;
         &:hover{
             color:$greyish-brown;
             border-color:$warm-grey-three;
@@ -51,10 +53,52 @@
     &__image{
         img{
             display: block;
+            width: 100%;
         }
     }
     .btn-link{
         margin-top: 55px;
         display: inline-block;
+    }
+}
+
+@media only screen and (max-width:1080px){
+    .potential{
+        &__tabs-nav{
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        &__tab-link-item{
+            width: calc(33.333% - 25px);
+            margin-bottom: 30px;
+        }
+        &__tab-content{
+            flex-wrap: wrap;
+        }
+        &__image{
+            margin: 0 auto;
+            width: 598px;
+        }
+        &__content{
+            width: 100%;
+            order:2;
+            margin: 30px auto 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width:767px){
+    .potential{
+        &__tab-link-item{
+            width:100%;
+            margin-bottom: 30px;
+        }
+        &__tab-link{
+            height: initial;
+        }
+        &__content{
+            font-size: $main-font-size;
+        }
     }
 }
