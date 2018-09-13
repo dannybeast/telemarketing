@@ -16,6 +16,25 @@
         align-items: center;
         margin-left: auto;
     }
+    .lang:hover{
+        position: relative;
+        .header__dropdown{
+            display: block;
+            position: absolute;
+            top: 60px;
+            color: #000;
+            .case{
+                padding: 20px;
+                background: #f7f7f7;
+                &:hover{
+                    background: #e0e0e0;
+                }
+            }
+        }
+    }
+    &__dropdown{
+        display: none;
+    }
     &__button{
         height: 60px;
         width: 60px;
