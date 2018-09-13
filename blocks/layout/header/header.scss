@@ -1,6 +1,38 @@
 // header
 .header{
     width: 100%;
-    height: 60px;
     background-color: $black;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    &__logo{
+        width: 183px;
+        display: block;
+        margin-right: 53px;
+        img{
+            display: block;
+        }
+    }
+    &__navigation{
+        display: flex;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        display: block;
+        color:$white;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 0 13px;
+        height: 60px;
+        line-height: 60px;
+        &:hover{
+            background: $black-five;
+        }
+    }
 }
