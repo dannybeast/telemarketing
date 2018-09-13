@@ -22,12 +22,12 @@
             display: block;
             position: absolute;
             top: 60px;
-            color: #000;
+            color: $black;
             .case{
                 padding: 20px;
-                background: #f7f7f7;
+                background: $white-five;
                 &:hover{
-                    background: #e0e0e0;
+                    background: $white-six;
                 }
             }
         }

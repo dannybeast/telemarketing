@@ -68,23 +68,10 @@
         font-weight: 300;
         padding-bottom: 70px;
     }
-    &__link{
-        font-size: 20px;
-        color: $black;
-        text-decoration: none;
-        line-height: 38px;
-        font-weight: 400;
-        position: relative;
-        padding-right: 30px;
+    .btn-link{
+        &:hover{
+            opacity: 0.7;
+        }
     }
-    .intro-banner__link::after{
-        content: '';
-        display: block;
-        position: absolute;
-        right: 0;
-        top: calc(50% - 4px);
-        width: 19px;
-        height: 11px;
-        background: url("../img/icons/line-arrow-black.svg") center no-repeat;
-    }
+
 }

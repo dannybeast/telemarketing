@@ -3239,12 +3239,12 @@ footer {
       display: block;
       position: absolute;
       top: 60px;
-      color: #000; }
+      color: #000000; }
       .header .lang:hover .header__dropdown .case {
         padding: 20px;
-        background: #f7f7f7; }
+        background: #efefef; }
         .header .lang:hover .header__dropdown .case:hover {
-          background: #e0e0e0; }
+          background: #d2d2d2; }
   .header__dropdown {
     display: none; }
   .header__button {
@@ -3446,7 +3446,20 @@ footer {
 
 .btn-link {
   font-size: 20px;
-  color: #000000; }
+  color: #000000;
+  font-weight: 300;
+  text-decoration: none; }
+  .btn-link svg {
+    fill: #000000;
+    margin-left: 10px; }
+  .btn-link--blue {
+    color: #1838e0; }
+    .btn-link--blue svg {
+      fill: #1838e0; }
+    .btn-link--blue:hover {
+      color: #000000; }
+      .btn-link--blue:hover svg {
+        fill: #000000; }
 
 .notice {
   position: fixed;
@@ -3647,24 +3660,8 @@ footer {
     line-height: 38px;
     font-weight: 300;
     padding-bottom: 70px; }
-  .intro-banner__link {
-    font-size: 20px;
-    color: #000000;
-    text-decoration: none;
-    line-height: 38px;
-    font-weight: 400;
-    position: relative;
-    padding-right: 30px; }
-  .intro-banner .intro-banner__link::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: -webkit-calc(50% - 4px);
-    top: calc(50% - 4px);
-    width: 19px;
-    height: 11px;
-    background: url("../img/icons/line-arrow-black.svg") center no-repeat; }
+  .intro-banner .btn-link:hover {
+    opacity: 0.7; }
 
 .leader {
   margin: 80px 0 0 0;
