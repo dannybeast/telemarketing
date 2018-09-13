@@ -3277,3 +3277,6 @@ footer {
   letter-spacing: 1px; }
   .loader svg {
     width: 50px; }
+
+.analytics p {
+  color: #000; }
