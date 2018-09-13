@@ -1,3 +1,60 @@
 .potential{
-    
+    margin:$section-margin 0;
+    &__title{
+        text-align: center;
+        font-size: $section-title-size;
+        font-weight: 300;
+        margin-bottom: 70px;
+    }
+    &__tabs-nav{
+        display: flex;
+        margin-bottom: 80px;
+    }
+    &__tab-content{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__tab-link-item{
+        margin: 0 25px 0 0;
+        width: 18%;
+        &.ui-state-active{
+            .potential__tab-link{
+                border-color:$azul;
+            }
+        }
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__tab-link{
+        color:$warm-grey-four;
+        text-decoration: none;
+        font-weight: 300;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.43;
+        display: block;
+        border-bottom: 2px solid $white-six;
+        padding-bottom: 32px;
+        &:hover{
+            color:$greyish-brown;
+            border-color:$warm-grey-three;
+        }
+    }
+    &__content{
+        max-width: 590px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    &__image{
+        img{
+            display: block;
+        }
+    }
+    .btn-link{
+        margin-top: 55px;
+        display: inline-block;
+    }
 }

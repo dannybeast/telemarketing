@@ -1,11 +1,12 @@
 .leader{
-    margin: $section-margin 0 0 0;
+    margin: $section-margin 0;
+    padding-bottom: 50px;
     position: relative;
     &:before{
         content: '';
         position: absolute;
         width: 40%;
-        bottom:-50px;    
+        bottom:0px;    
         height: 550px;
         z-index: 1;
         display: block;
@@ -40,6 +41,9 @@
         font-size: 20px;  
         line-height: 1.5;
         font-weight: 300;
+        strong{
+            font-weight: 400;
+        }
         p{
             margin-bottom: 30px;
             &:last-child{
