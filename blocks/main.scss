@@ -1,10 +1,10 @@
-// base
-@import "_base/variables";
-@import "_base/fonts";
-
 // packages
 @import "../node_modules/reset-css/sass/reset";
 @import "_base/grid";
+
+// base
+@import "_base/variables";
+@import "_base/fonts";
 
 //	layout 
 @import "layout/layout";

@@ -2,4 +2,71 @@
 .footer{
   background: $white-five;
   padding: 72px 0 39px 0;
+  color:$black-three;
+  &__top{
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__column{
+    width: 20%;
+  }
+  &__list{
+    list-style: none;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 14px;
+  }
+  &__item{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    font-size: 14px;
+    color:$black-three;
+    font-weight: 300;
+    text-decoration: none;
+    &:hover{
+      color:$azul;
+    }
+  }
+
+
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    a{
+      text-decoration: none;
+      color:$black-three;
+      &:hover{
+        color:$azul;
+      }
+    }
+  }
+  &__copyright{
+    margin-right: 100px;
+  }
+  &__contacts{
+    margin-right: 80px;
+    a{
+      margin: 0 20px 0;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &__social{
+
+    a{
+      margin: 0 20px 0;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
 }
