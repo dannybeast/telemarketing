@@ -3839,8 +3839,7 @@ footer {
             justify-content: space-between; }
   .potential__tab-link-item {
     margin: 0 25px 0 0;
-    width: -webkit-calc(18% - 25px);
-    width: calc(18% - 25px); }
+    width: 18%; }
     .potential__tab-link-item.ui-state-active .potential__tab-link {
       border-color: #1838e0; }
     .potential__tab-link-item:last-child {

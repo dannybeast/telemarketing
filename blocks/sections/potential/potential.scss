@@ -17,7 +17,7 @@
     }
     &__tab-link-item{
         margin: 0 25px 0 0;
-        width: calc(18% - 25px);
+        width: 18%;
         &.ui-state-active{
             .potential__tab-link{
                 border-color:$azul;
