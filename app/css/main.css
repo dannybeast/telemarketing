@@ -3139,7 +3139,8 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   min-width: 320px;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 60px; }
 
 ::-moz-selection {
   background-color: #ffec86;
@@ -3189,7 +3190,6 @@ footer {
           flex: 0 0 auto; }
 
 .header {
-  width: 100%;
   background-color: #000000;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3201,7 +3201,11 @@ footer {
           align-items: center;
   padding-left: 30px;
   padding-right: 30px;
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 15; }
   .header__logo {
     width: 183px;
     display: block;
