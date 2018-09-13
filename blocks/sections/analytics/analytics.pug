@@ -2,39 +2,38 @@ include ../../items/gray-item/gray-item
 +b.SECTION.analytics
   .container
     +e.title-block
-      h3.title Аналитика и семинары
-      p.subtitle все материалы
+      +e.H3.title Аналитика и семинары
+      +e.P.subtitle все материалы
     +e.items
-      +e.item
-        +gray-item("img/analytics/1.jpg","#")
-          a(href="#") Онлайн-семинар «Viber
-            |для бизнеса»
-      +e.item
-        +gray-item("img/analytics/2.jpg","#")
-          a(href="#") Онлайн-конференция 
-            |«Мобильная реклама»
-      +e.item
-        +gray-item("img/analytics/3.jpg","#")
-          a(href="#") Онлайн-конференция: 
-            |«SMS-информирование: 
-            |больше результата за 
-            |меньшие деньги»
-      +e.item
-        +gray-item("img/analytics/4.jpg","#")
-          a(href="#") Семинар: «Копирайтинг в 
-            |SMS-маркетинге: как ёмко, 
-            |ярко и эффективно 
-            |написать текст SMS»
 
-      +e.item
-        +gray-item("img/analytics/5.jpg","#")
-          a(href="#") Семинар: «Стоп-СПАМ: 
-            |как соблюсти 
-            |законодательство и не 
-            |получить штраф?»
-      +e.item
-        +gray-item("img/analytics/6.jpg","#")
-          a(href="#") Семинар: «SMS-маркетинг 
-            |- разрабатываем 
-            |коммуникационную 
-            |стратегию»
+        +gray-item("img/analytics/1.jpg","#", "__item")
+            span Онлайн-семинар «Viber
+              |для бизнеса»
+
+        +gray-item("img/analytics/2.jpg","#", "__item")
+            span Онлайн-конференция 
+              |«Мобильная реклама»
+
+        +gray-item("img/analytics/3.jpg","#", "__item")
+            span Онлайн-конференция: 
+              |«SMS-информирование: 
+              |больше результата за 
+              |меньшие деньги»
+
+        +gray-item("img/analytics/4.jpg","#", "__item")
+            span Семинар: «Копирайтинг в 
+              |SMS-маркетинге: как ёмко, 
+              |ярко и эффективно 
+              |написать текст SMS»
+
+        +gray-item("img/analytics/5.jpg","#", "__item")
+            span Семинар: «Стоп-СПАМ: 
+              |как соблюсти 
+              |законодательство и не 
+              |получить штраф?»
+
+        +gray-item("img/analytics/6.jpg","#", "__item")
+            span Семинар: «SMS-маркетинг 
+              |- разрабатываем 
+              |коммуникационную 
+              |стратегию»

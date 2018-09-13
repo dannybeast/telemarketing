@@ -1,8 +1,7 @@
-mixin gray-item(image, link)  
-    +b.gray-item
+mixin gray-item(image, link, itemClass)  
+    +b.A(href=link).gray-item(class=itemClass)
         +e.image-wrap
-            a(href=link)
-                img(src=image)
+            img(src=image)
         +e.text-wrap
             if block
                 block
