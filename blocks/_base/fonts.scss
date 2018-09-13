@@ -1,1 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+@font-face {
+    font-family: 'formular';
+    src: url('../fonts/formular-bold-webfont.woff2') format('woff2'),
+         url('../fonts/formular-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'formular';
+    src: url('../fonts/formular-light-webfont.woff2') format('woff2'),
+         url('../fonts/formular-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'formular';
+    src: url('../fonts/formular-regular-webfont.woff2') format('woff2'),
+         url('../fonts/formular-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
