@@ -6,7 +6,7 @@
   display: inline-block;
   background: transparent;
   font-size: 1.25rem;
-  color:#000;
+  color:$black;
   text-transform: uppercase;
   padding: 12px 20px;
   text-decoration: none;
@@ -22,4 +22,9 @@
     opacity: 0.5;
   }
 
+}
+
+.btn-link{
+  font-size: 20px;
+  color:$black;
 }
