@@ -3553,8 +3553,122 @@ footer {
     width: 0%;
     left: 50%; }
 
+.intro {
+  font-weight: 300; }
+  .intro__title-block {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: left; }
+  .intro__main-title {
+    color: #000000;
+    font-size: 55.5px;
+    line-height: 76px; }
+  .intro__second-title {
+    color: #999999;
+    font-size: 55.5px;
+    line-height: 76px; }
+
 .analytics p {
   color: #000; }
+
+.intro-banner {
+  position: relative; }
+  .intro-banner:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    top: 50px;
+    height: 400px;
+    right: 0;
+    background: url("../img/dots.png");
+    z-index: 1; }
+  .intro-banner .container {
+    position: absolute;
+    left: 50%;
+    margin-left: -605px;
+    z-index: 3; }
+  .intro-banner__marker {
+    background: rgba(147, 157, 170, 0.5);
+    color: #fff;
+    font-size: 32px;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: 300; }
+  .intro-banner--black {
+    background: #000000; }
+    .intro-banner--black:after {
+      top: initial;
+      right: 70px;
+      bottom: -50px;
+      height: 500px;
+      opacity: 0.2; }
+  .intro-banner__main-wrap {
+    width: 80%;
+    position: relative; }
+  .intro-banner__image-wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2; }
+    .intro-banner__image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 483px;
+      display: block; }
+  .intro-banner__card-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ffec86;
+    padding: 40px 35px;
+    z-index: 3; }
+  .intro-banner__text {
+    font-size: 32px;
+    color: #000000;
+    line-height: 38px;
+    font-weight: 300;
+    padding-bottom: 70px; }
+  .intro-banner__link {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 38px;
+    font-weight: 400;
+    position: relative;
+    padding-right: 30px; }
+  .intro-banner .intro-banner__link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -webkit-calc(50% - 4px);
+    top: calc(50% - 4px);
+    width: 19px;
+    height: 11px;
+    background: url("../img/icons/line-arrow-black.svg") center no-repeat; }
+
+.leader__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.leader__image {
+  width: 50%; }
+  .leader__image img {
+    display: block;
+    width: 100%; }
+
+.leader__content {
+  width: 50%; }
 
 .partners {
   padding: 80px 0; }

@@ -1,0 +1,14 @@
+mixin intro-banner(image, link, sectionClass, marker)
+  +b.SECTION.intro-banner(class=sectionClass)
+    if marker
+        .container
+            +e.P.marker CRM World Club
+    +e.main-wrap
+        +e.image-wrap
+            img(src=image)
+        +e.card-wrap
+            if block
+                block
+            else
+                +e.H3.text Введите текст 
+            +e.A.link(href=link) Узнать больше

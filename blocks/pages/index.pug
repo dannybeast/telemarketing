@@ -1,5 +1,5 @@
 extends ../layout/layout
-include ../ui/banner/banner
+include ../sections/intro-banner/intro-banner
 
 block variables 
   - var pageClass = 'body-index';
@@ -10,7 +10,7 @@ block variables
 block content
   +b.MAIN(role='main')
     include ../sections/intro/intro
-    +intro-banner("img/index-img.jpg", "#")
+    +intro-banner("img/index-img.jpg", "#", "", "")
       +e.H3.text Мир не стоит на 
         br
         |месте и ваш
@@ -24,7 +24,7 @@ block content
     include ../sections/analytics/analytics
     include ../sections/leader/leader
     include ../sections/partners/partners
-    +intro-banner("img/index-img4.jpg", "#")
+    +intro-banner("img/index-img4.jpg", "#", "--black", "marker")
       +e.H3.text Cообщество 
         br
         |профессионалов 
