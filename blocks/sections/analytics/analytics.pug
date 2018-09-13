@@ -1,3 +1,40 @@
+include ../../items/gray-item/gray-item
 +b.SECTION.analytics
   .container
-    p 
+    +e.title-block
+      h3.title Аналитика и семинары
+      p.subtitle все материалы
+    +e.items
+      +e.item
+        +gray-item("img/analytics/1.jpg","#")
+          a(href="#") Онлайн-семинар «Viber
+            |для бизнеса»
+      +e.item
+        +gray-item("img/analytics/2.jpg","#")
+          a(href="#") Онлайн-конференция 
+            |«Мобильная реклама»
+      +e.item
+        +gray-item("img/analytics/3.jpg","#")
+          a(href="#") Онлайн-конференция: 
+            |«SMS-информирование: 
+            |больше результата за 
+            |меньшие деньги»
+      +e.item
+        +gray-item("img/analytics/4.jpg","#")
+          a(href="#") Семинар: «Копирайтинг в 
+            |SMS-маркетинге: как ёмко, 
+            |ярко и эффективно 
+            |написать текст SMS»
+
+      +e.item
+        +gray-item("img/analytics/5.jpg","#")
+          a(href="#") Семинар: «Стоп-СПАМ: 
+            |как соблюсти 
+            |законодательство и не 
+            |получить штраф?»
+      +e.item
+        +gray-item("img/analytics/6.jpg","#")
+          a(href="#") Семинар: «SMS-маркетинг 
+            |- разрабатываем 
+            |коммуникационную 
+            |стратегию»

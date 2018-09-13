@@ -1,3 +1,10 @@
-mixin gray-item()  
-    +b.DIV.gray-item
-        p тест
+mixin gray-item(image, link)  
+    +b.gray-item
+        +e.image-wrap
+            a(href=link)
+                img(src=image)
+        +e.text-wrap
+            if block
+                block
+            else
+                p Введите текст карточки

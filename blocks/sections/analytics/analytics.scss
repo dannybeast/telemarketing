@@ -1,5 +1,30 @@
 .analytics{
+    &__title-block{
+        padding: 35px 0;
+        .title{
+            font-size: 20px;
+            line-height: 40px;
+            color: $black;
+        }
+        .subtitle{
+            font-size: 14px;
+            line-height: 40px;
+            color: $greyish-three;
+            font-weight: 300;
+        }
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     p{
-        color:#000;
+        color:$black;
+    }
+    &__item{
+        //width: calc(33% - 16px);
+        width: 380px;
+        margin-right: 12px;
+        margin-bottom: 20px;
     }
 }

@@ -1,3 +1,37 @@
 .gray-item{
-    
+  display: flex;
+  height: 100%;
+    &__image-wrap{
+      img{
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    &__text-wrap{
+      background: $white-four;
+      height: 100%;
+      color: $black;
+      padding: 18px 20px;
+    }
+    a{
+      font-size: 14px;
+      font-weight: 300;
+      color: $black-four;
+      line-height: 16px;
+      text-decoration: none;
+      &:hover{
+        color:$azul;
+      }
+    }
+}
+
+@media only screen and (max-width:480px){
+  .gray-item{
+    flex-direction: column;
+    &__image-wrap{
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
