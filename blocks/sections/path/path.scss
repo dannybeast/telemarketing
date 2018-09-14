@@ -1,0 +1,29 @@
+.path{
+  &__links{
+    //height: 65px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $white-six;
+    align-items: center;
+    a{
+      color: $white-seven;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 300;
+      margin-right: 3px;
+      margin-left: 3px;
+      padding-bottom: 15px;
+      &:hover{
+        color: $azul;
+      }
+    }
+    span{
+      padding-bottom: 15px;
+      font-size: 12px;
+      font-weight: 300;
+      color: $white-seven;
+    }
+  }
+}
