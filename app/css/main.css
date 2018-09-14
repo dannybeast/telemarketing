@@ -3686,7 +3686,9 @@ footer {
     width: 100%; } }
 
 .intro-banner {
-  position: relative; }
+  position: relative;
+  z-index: 8;
+  height: 483px; }
   .intro-banner:after {
     content: '';
     position: absolute;
@@ -3697,10 +3699,7 @@ footer {
     background: url("../img/dots.png");
     z-index: 1; }
   .intro-banner .container {
-    position: absolute;
-    left: 50%;
-    margin-left: -605px;
-    z-index: 3; }
+    height: 483px; }
   .intro-banner__marker {
     background: rgba(147, 157, 170, 0.5);
     color: #fff;
@@ -3710,7 +3709,8 @@ footer {
     font-weight: 300; }
   .intro-banner__main-wrap {
     width: 90%;
-    position: relative; }
+    position: absolute;
+    z-index: -1; }
   .intro-banner--black {
     background: #000000; }
     .intro-banner--black .intro-banner__main-wrap {
@@ -3720,7 +3720,8 @@ footer {
       right: 70px;
       bottom: -50px;
       height: 500px;
-      opacity: 0.2; }
+      opacity: 0.2;
+      z-index: -2; }
   .intro-banner__image-wrap {
     width: 100%;
     overflow: hidden;
@@ -3728,7 +3729,7 @@ footer {
     z-index: 2; }
     .intro-banner__image-wrap img {
       width: 100%;
-      height: 100%;
+      height: 483px;
       object-fit: cover;
       min-height: 483px;
       display: block; }
