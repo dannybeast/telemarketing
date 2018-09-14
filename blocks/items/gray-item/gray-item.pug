@@ -1,9 +1,0 @@
-mixin gray-item(image, link, itemClass)  
-    +b.A(href=link).gray-item(class=itemClass)
-        +e.image-wrap
-            img(src=image)
-        +e.text-wrap
-            if block
-                block
-            else
-                p Введите текст карточки
