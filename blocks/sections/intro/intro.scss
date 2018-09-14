@@ -1,0 +1,27 @@
+.intro{
+    font-weight: 300;
+    &__title-block{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: left;
+    }
+    &__main-title{
+        color: $black;
+        font-size: 55.5px;
+        line-height: 76px;
+        span{
+            color: $warm-grey-two;
+            display: block;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:767px){
+    .intro{
+        &__main-title{
+            font-size: 36px;
+            line-height: 1.43;
+        }
+    }
+}

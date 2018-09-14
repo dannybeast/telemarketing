@@ -1,0 +1,44 @@
+.gray-item{
+  display: flex;
+  text-decoration: none;
+  color: $black-four;
+  background: $white-four;
+  &:hover{
+    color:$azul;
+  }
+    &__image-wrap{
+      img{
+        display: block;
+        
+      }
+    }
+    &__text-wrap{
+      height: 100%;
+      width: calc(100% - 140px);
+      padding: 18px 20px;
+      span{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+        text-decoration: none;
+        max-height: 64px;
+        display: block;
+        overflow: hidden;
+      }
+    }
+    
+}
+
+@media only screen and (max-width:480px){
+  .gray-item{
+    flex-direction: column;
+    &__text-wrap{
+      width: 100%;
+    }
+    &__image-wrap{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// header
++b.HEADER.header
+
+  +e.A(href="/", class="logo")
+    img(src="img/logo/logo.svg", alt="") 
+
+  include ../../ui/mobile-nav-btn/mobile-nav-btn
+  
+  +e.NAV.navigation
+    +e.UL.list
+      +e.LI.item
+        +e.A(href="#", class="link") Услуги
+      +e.LI.item
+        +e.A(href="#", class="link") Решения
+      +e.LI.item
+        +e.A(href="#", class="link") База знаний
+      +e.LI.item
+        +e.A(href="#", class="link") CRM World Club
+      +e.LI.item
+        +e.A(href="#", class="link") Компания
+      +e.LI.item
+        +e.A(href="#", class="link") Контакты
+  
+  +e.right
+    +e.A(href="#").button.lang
+      p Ru
+      +e.dropdown
+        p.case Ru
+        p.case En
+    +e.A(href="#").button
+      img(src="img/icons/user.svg", alt="")

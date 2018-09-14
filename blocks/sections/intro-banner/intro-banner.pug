@@ -1,0 +1,17 @@
+mixin intro-banner(image, link, sectionClass, marker)
+  +b.SECTION.intro-banner(class=sectionClass)
+    if marker
+        .container
+            +e.P.marker CRM World Club
+    +e.main-wrap
+        +e.image-wrap
+            img(src=image)
+        +e.card-wrap
+            if block
+                block
+            else
+                +e.H3.text Введите текст 
+            +b.A(href="#", class="btn-link")
+                span Узнать больше
+                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='19px', height='11px')
+                    path(fill-rule='evenodd', d='M13.472,10.999 L12.179,10.999 L16.259,6.041 L-0.000,6.000 L-0.000,5.000 L16.259,4.956 L12.179,-0.002 L13.472,-0.002 L18.999,5.499 L13.472,10.999 Z')

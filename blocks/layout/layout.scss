@@ -1,0 +1,48 @@
+body{
+	background: $white;
+	font-family: $main-font;
+	letter-spacing: 0.3px;
+	overflow-x: hidden;
+	max-width: 100%;
+	min-width: 320px;
+	font-size: $main-font-size;
+	padding-top: 60px;
+
+
+	
+}
+::selection{
+	background-color: $accent;
+	color: $black;
+}
+main{
+	position: relative;
+}
+
+// FOOTER к низу
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html,
+body{	
+	height: 100%;
+}
+
+.wrapper{	
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.page-content{	
+	flex: 1 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+footer{
+	flex: 0 0 auto;
+}
