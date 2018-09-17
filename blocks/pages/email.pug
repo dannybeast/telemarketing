@@ -1,11 +1,12 @@
 extends ../layout/layout
 include ../sections/path/path
+include ../sections/advantages/advantages
 
 block variables 
   - var pageClass = '';
-  - var pageTitle = "Онлайн-конференция";
+  - var pageTitle = "E-mail рассылка";
   - var pageDescription = "Описание страницы"
-  - var pageName = "index"
+  - var pageName = "email"
 
 block content
   +b.MAIN(role='main')
@@ -16,5 +17,17 @@ block content
       span.separator /
       a(href="#") E-mail рассылка
     include ../sections/email/email
-    include ../sections/advantages/advantages
+    +advantages("Преимущества")
+      +e.left
+        ul
+          li Оперативное уведомление своих потенциальных и действующих клиентов о скидках и акциях
+          li Информирование о проведении мероприятий, новых товарах и услугах
+          li Регулярная отправка деловых новостей подписчикам
+          li Привлечение дополнительного трафика на свой сайт
+      +e.right
+        ul
+          li Работа с клиентом в рамках программ лояльности и рекламных акций
+          li Сбор и анализ статистики по проведенной рассылке
+          li Простое и быстрое создание индивидуального макета письма
+          li Возможность интеграции с внешними системами
     include ../sections/connection/connection

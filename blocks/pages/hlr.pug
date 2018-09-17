@@ -1,11 +1,12 @@
 extends ../layout/layout
 include ../sections/path/path
+include ../sections/advantages/advantages
 
 block variables 
   - var pageClass = '';
-  - var pageTitle = "Онлайн-конференция";
+  - var pageTitle = "HLR рассылка";
   - var pageDescription = "Описание страницы"
-  - var pageName = "index"
+  - var pageName = "hlr"
 
 block content
   +b.MAIN(role='main')
@@ -14,7 +15,16 @@ block content
       span.separator /
       a(href="#") Услуги
       span.separator /
-      a(href="#") E-mail рассылка
-    include ../sections/email/email
-    include ../sections/advantages/advantages
+      a(href="#") HLR-запрос
+    include ../sections/hlr-section/hlr-section
+    +advantages("Преимущества")
+      +e.left
+        ul
+          li Выявление действующих и недействующих абонентских номеров
+          li Актуализация базы номеров
+          li Оптимизация средств на рекламную кампанию в высокий отпускной сезон
+      +e.right
+        ul
+          li Определение оператора, обслуживающего телефонный номер
+          li Сбор и анализ статистики через личный кабинет
     include ../sections/connection/connection
