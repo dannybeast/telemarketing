@@ -1,0 +1,32 @@
+extends ../layout/layout
+include ../sections/path/path
+include ../sections/advantages/advantages
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "SMS-рассылка";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "sms"
+
+block content
+  +b.MAIN(role='main')
+    +path
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") SMS-рассылка
+    include ../sections/auth-section/auth-section
+    +advantages("Преимущества")
+      +e.left
+        ul
+          li Высококвалифицированная техническая поддержка 24/7/365
+          li Надежность и отказоустойчивость платформы. Сервис построен на базе геораспределенного кластера серверов, что обеспечивает максимальную доступность сервиса.
+          li Простой и интуитивно понятный интерфейс пользователя. Простое подключение к API.
+      +e.right
+        ul
+          li Гибкая настройка сервиса под каждого клиента. Мы предоставляем возможность настраивать сложность отправляемых паролей, время жизни пароля, время жизни смс-сообщения.
+          li Возможность настройки защиты от смены сим-карты.
+          li Высокая скорость доставки одноразовых паролей по смс. Мы используем собственную платформу для отправки смс-сообщений непосредственно в сети операторов, что гарантирует высокую скорость доставки.
+    include ../sections/connection/connection
+    include ../sections/form/form

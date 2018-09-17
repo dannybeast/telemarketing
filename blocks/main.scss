@@ -21,6 +21,7 @@
 // items
 @import "items/gray-item/gray-item"; // for section/analytics
 @import "items/info-item/info-item";
+@import "items/input/input";
 
 // sections
 @import "sections/intro/intro"; 
@@ -36,5 +37,7 @@
 @import "sections/advantages/advantages";
 @import "sections/connection/connection";
 @import "sections/sms-section/sms-section";
+@import "sections/auth-section/auth-section";
+@import "sections/form/form";
 
 // pages

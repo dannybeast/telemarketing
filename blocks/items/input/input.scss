@@ -1,0 +1,24 @@
+.form{
+  display: block;
+  position: relative;
+  input{
+    padding-left: 20px;
+    height: 60px;
+    width: 100%;
+    border: 1px solid $pinkish-grey;
+  }
+  span{
+    color: $pinkish-grey;
+    font-size: 31px;
+    position: absolute;
+    left: 22px;
+    top: calc(50% - 15px);
+  }
+  &:hover{
+    span{
+      //transition: all .2s ease;
+      transform: translateX(-15px) translateY(-15px);
+      font-size: 14px;
+    }
+  }
+}

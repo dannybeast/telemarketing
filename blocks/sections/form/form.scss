@@ -1,0 +1,25 @@
+.form-section{
+  &__title{
+    text-align: center;
+    font-size: 39.5px;
+    color: $black;
+    font-weight: 300;
+    margin: 50px 0;
+  }
+  &__info{
+    text-align: center;
+    color: $black-three;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+  }
+  &__inputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px -3.5px;
+    .form{
+      width: calc(33% - 7px);
+      margin: 5px 3.5px;
+    }
+  }
+}
