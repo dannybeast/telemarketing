@@ -4323,3 +4323,73 @@ footer {
     margin: 60px 0; }
   .connection-section .info-item {
     width: 100%; } }
+
+.sms-section {
+  border-bottom: 1px solid #d2d2d2; }
+  .sms-section__sms-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 95px; }
+  .sms-section__left {
+    margin-top: 80px;
+    padding-right: 80px; }
+  .sms-section__title {
+    font-size: 41.5px;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .sms-section__info {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300; }
+  .sms-section__right {
+    margin-bottom: 10px;
+    width: 340px;
+    height: 409px; }
+  .sms-section__right-wrap {
+    position: relative;
+    width: 340px;
+    height: 409px;
+    background: url(../img/phone.svg) center no-repeat;
+    background-size: 100%; }
+  .sms-section__message-wrap {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: -webkit-calc(50% - 80px);
+    top: calc(50% - 80px);
+    width: 230px;
+    height: 185px;
+    background: url(../img/message.svg) center no-repeat;
+    background-size: 100%; }
+  .sms-section__text {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding: 14px 21px 23px 16px; }
+
+@media only screen and (max-width: 767px) {
+  .sms-section__sms-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .sms-section__left {
+    margin-top: 0;
+    padding: 0; }
+  .sms-section__right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+    width: 100%; }
+  .sms-section__right-wrap {
+    width: 320px; } }
