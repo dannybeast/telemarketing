@@ -1,5 +1,5 @@
 extends ../layout/layout
-include ../sections/path/path
+include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
 
 block variables 
@@ -10,8 +10,8 @@ block variables
 
 block content
   +b.MAIN(role='main')
-    +path
-      a(href="#") Главная
+    +breadcrumbs
+      a(href="#") Главная 
       span.separator /
       a(href="#") Услуги
       span.separator /

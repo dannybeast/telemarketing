@@ -1,5 +1,5 @@
 mixin gray-item(image, link, itemClass)  
-    +b.A(href=link).gray-item(class=itemClass)
+    +b.A(href=link, class=itemClass).gray-item
         +e.image-wrap
             img(src=image)
         +e.text-wrap

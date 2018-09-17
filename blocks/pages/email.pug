@@ -1,5 +1,5 @@
 extends ../layout/layout
-include ../sections/path/path
+include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
 
 block variables 
@@ -10,7 +10,7 @@ block variables
 
 block content
   +b.MAIN(role='main')
-    +path
+    +breadcrumbs
       a(href="#") Главная
       span.separator /
       a(href="#") Услуги
@@ -18,13 +18,13 @@ block content
       a(href="#") E-mail рассылка
     include ../sections/email/email
     +advantages("Преимущества")
-      +e.left
+ 
         ul
           li Оперативное уведомление своих потенциальных и действующих клиентов о скидках и акциях
           li Информирование о проведении мероприятий, новых товарах и услугах
           li Регулярная отправка деловых новостей подписчикам
           li Привлечение дополнительного трафика на свой сайт
-      +e.right
+    
         ul
           li Работа с клиентом в рамках программ лояльности и рекламных акций
           li Сбор и анализ статистики по проведенной рассылке

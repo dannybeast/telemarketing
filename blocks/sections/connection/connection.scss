@@ -18,6 +18,15 @@
   }
 }
 
+
+@media only screen and (max-width:992px){
+  .connection-section{
+    &__title{
+      margin: 50px 0;
+    }
+  }
+}
+
 @media only screen and (max-width:767px){
   .connection-section{
     .info-item{

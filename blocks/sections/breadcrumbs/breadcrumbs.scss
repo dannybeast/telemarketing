@@ -1,8 +1,7 @@
-.path{
+.breadcrumbs{
   &__links{
-    //height: 65px;
     padding-top: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid $white-six;
