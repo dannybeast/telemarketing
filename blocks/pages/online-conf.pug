@@ -1,5 +1,5 @@
 extends ../layout/layout
-include ../sections/path/path
+include ../sections/breadcrumbs/breadcrumbs
 
 block variables 
   - var pageClass = '';
@@ -9,7 +9,7 @@ block variables
 
 block content
   +b.MAIN(role='main')
-    +path
+    +breadcrumbs
       a(href="#") Главная
       span.separator /
       a(href="#") База знаний

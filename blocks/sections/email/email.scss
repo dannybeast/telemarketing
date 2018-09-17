@@ -2,10 +2,10 @@
   border-bottom: 1px solid $white-six;
   &__email-block{
      display: flex;
+     align-items: center;
      margin-top: 95px;
   }
   &__left{
-    margin-top: 80px;
     padding-right: 80px;
   }
   &__title{
@@ -62,6 +62,17 @@
   &__bottom{
     font-size: 12px;
     line-height: 14px;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .email-section{
+   &__email-block{
+     margin-top: 50px;
+   }
+   &__left{
+     padding-bottom: 50px;
+   } 
   }
 }
 
