@@ -1,4 +1,5 @@
 extends ../layout/layout
+include ../sections/path/path
 
 block variables 
   - var pageClass = '';
@@ -8,5 +9,12 @@ block variables
 
 block content
   +b.MAIN(role='main')
-    include ../sections/path/path
+    +path
+      a(href="#") Главная
+      span.separator /
+      a(href="#") База знаний
+      span.separator /
+      a(href="#") Видеозаписи
+      span.separator /
+      a(href="#") Онлайн конференции
     include ../sections/conference/conference

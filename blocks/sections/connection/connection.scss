@@ -1,0 +1,38 @@
+.connection-section{
+  &__title{
+    font-size: 31.5px;
+    color: $black;
+    font-weight: 300;
+    text-align: center;
+    margin: 107px 0;
+  }
+  &__cards-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    margin-bottom: 100px;
+  }
+  .info-item{
+    width: calc(33% - 20px);
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .connection-section{
+    .info-item{
+      width: calc(50% - 20px);
+    }
+  }
+}
+
+@media only screen and (max-width:480px){
+  .connection-section{
+    &__title{
+      margin: 60px 0;
+    }
+    .info-item{
+      width: 100%;
+    }
+  }
+}

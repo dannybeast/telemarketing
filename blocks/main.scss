@@ -20,6 +20,7 @@
 
 // items
 @import "items/gray-item/gray-item"; // for section/analytics
+@import "items/info-item/info-item";
 
 // sections
 @import "sections/intro/intro"; 
@@ -31,5 +32,7 @@
 @import "sections/path/path";
 @import "sections/conference/conference";
 @import "sections/email/email";
+@import "sections/advantages/advantages";
+@import "sections/connection/connection";
 
 // pages

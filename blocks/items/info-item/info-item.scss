@@ -1,0 +1,44 @@
+.info-item{
+  display: block;
+  background: $pale-grey;
+  text-decoration: none;
+  &__item-wrap{
+    display: block;
+    padding: 25px 22px;
+    position: relative;
+    height: 100%;
+  }
+  &__title{
+    font-size: 20px;
+    color: $black-three;
+    padding-bottom: 23px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+    color: $black-three;
+    padding-bottom: 50px;
+  }
+  .info-item__link{
+    color: $azul;
+    position: absolute;
+    padding-right: 33px;
+    bottom: 25px;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 19px;
+      height: 11px;
+      background: url('../img/icons/line-arrow.svg');
+      right: 0;
+      top: calc(50% - 5px);
+    }
+    &:hover{
+      color: $black-six;
+      &:after{
+        background: url('../img/icons/line-arrow-black.svg');
+      }
+    }
+  }
+}
