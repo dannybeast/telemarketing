@@ -1,0 +1,44 @@
+.mobile-ad-section{
+  border-bottom: 1px solid $white-six;
+  &__mobile-ad-block{
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+ }
+ &__left{
+   padding-bottom: 33px;
+ }
+ &__title{
+   font-size: 41.5px;
+   font-weight: 300;
+   margin-bottom: 45px;
+ }
+ &__info{
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 300;
+ }
+}
+
+@media only screen and (max-width:992px){
+  .mobile-ad-section{
+   &__mobile-ad-block{
+     margin-top: 50px;
+   }
+   &__left{
+     padding-bottom: 50px;
+   } 
+  }
+}
+
+@media only screen and (max-width:767px){
+  .mobile-ad-section{
+    &__mobile-ad-block{
+      flex-direction: column;
+    }
+    &__left{
+      margin-top: 0;
+    }
+   
+  }
+}

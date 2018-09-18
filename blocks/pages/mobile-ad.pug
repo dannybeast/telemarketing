@@ -1,0 +1,28 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Мобильная реклама";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "mobile-ad"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") Мобильная реклама
+    include ../sections/mobile-ad-section/mobile-ad-section
+    +advantages("Преимущества")
+      ul
+        li Тесный контакт с клиентом за счет доставки рекламного сообщения «прямо в руки» абоненту и его прочтения в 98 % случаев
+        li Низкая стоимость 1 контакта: от 1 рубля
+        li Результативность: показатель CTR может превышать 10% в зависимости от деталей рекламной кампании
+      ul
+        li Избирательность: перед рассылкой формируется наиболее точная целевая аудитория за счет критериев таргетинга, что позволяет сегментировать потенциальных клиентов на группы согласно их интересам и предпочтениям
+        li Быстрый запуск рекламной кампании: от 2 дней в зависимости от типа кампании
+    include ../sections/connection/connection

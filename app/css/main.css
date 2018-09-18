@@ -4871,5 +4871,44 @@ footer {
   .vk-messenger-section__right-wrap {
     width: 320px; } }
 
+.mobile-ad-section {
+  border-bottom: 1px solid #d2d2d2; }
+  .mobile-ad-section__mobile-ad-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 75px; }
+  .mobile-ad-section__left {
+    padding-bottom: 33px; }
+  .mobile-ad-section__title {
+    font-size: 41.5px;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .mobile-ad-section__info {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300; }
+
+@media only screen and (max-width: 992px) {
+  .mobile-ad-section__mobile-ad-block {
+    margin-top: 50px; }
+  .mobile-ad-section__left {
+    padding-bottom: 50px; } }
+
+@media only screen and (max-width: 767px) {
+  .mobile-ad-section__mobile-ad-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .mobile-ad-section__left {
+    margin-top: 0; } }
+
 .vk-messenger-page .adventages-section {
   margin-bottom: 173px; }
