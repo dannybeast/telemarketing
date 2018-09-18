@@ -1,0 +1,32 @@
+.card-wrap{
+  display: block;
+  text-decoration: none;
+  &__image{
+    width: 100%;
+    img{
+      display: block;
+      margin-bottom: 5px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .info-item{
+    &__item-wrap{
+      padding: 28px 30px;
+    }
+    &__date{
+      display: block;
+      padding-bottom: 28px;
+      font-size: 17.5px;
+      color: $grey-two;
+    }
+    &__title{
+      display: block;
+      line-height: 24px;
+      padding-bottom: 60px;
+    }
+    &__link{
+      margin-top: 20px;
+    }
+  }
+}

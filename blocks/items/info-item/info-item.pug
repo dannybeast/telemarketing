@@ -1,10 +1,16 @@
-mixin info-item(link)
-  +b.A.info-item(href="#")
-    +e.item-wrap
-      if block
-        block
-      else 
-        // Пример оформления
-        +e.H3.title Заголовок карты
-        +e.P.text Какой-нибудь абсолютно любой текст карточки, длинный или короткий
-        +e.SPAN.link Текст ссылки
+mixin info-item(link, child)
+  if child
+    +b.info-item
+      +e.item-wrap
+          if block
+            block
+  else
+    +b.A.info-item(href="#")
+      +e.item-wrap
+        if block
+          block
+        else 
+          // Пример оформления
+          +e.H3.title Заголовок карты
+          +e.P.text Какой-нибудь абсолютно любой текст карточки, длинный или короткий
+          +e.SPAN.link Текст ссылки

@@ -32,6 +32,17 @@
  }
 }
 
+@media only screen and (max-width:992px){
+  .hlr-section{
+   &__hlr-block{
+     margin-top: 50px;
+   }
+   &__left{
+     padding-bottom: 50px;
+   } 
+  }
+}
+
 @media only screen and (max-width:767px){
   .hlr-section{
     &__hlr-block{

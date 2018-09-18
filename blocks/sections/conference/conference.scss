@@ -39,6 +39,9 @@
 
 @media only screen and (max-width:892px){
   .conference{
+    &__title{
+      padding-right: 0;
+    }
     &__conf-block{
       flex-direction: column;
     }
