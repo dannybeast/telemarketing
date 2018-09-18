@@ -2,10 +2,11 @@
   display: block;
   position: relative;
   input{
-    padding-left: 20px;
+    padding-left: 22px;
     height: 60px;
     width: 100%;
     border: 1px solid $pinkish-grey;
+    font-size: 16px;
   }
   span{
     color: $pinkish-grey;
@@ -13,12 +14,17 @@
     position: absolute;
     left: 22px;
     top: calc(50% - 15px);
+    transition: all .2s ease;
   }
-  &:hover{
+  &.active{
+    input{
+      border-color: $greyish-brown;
+    }
     span{
-      //transition: all .2s ease;
-      transform: translateX(-15px) translateY(-15px);
+      transition: all .2s ease;
+      transform: translateY(-8px);
       font-size: 14px;
+      color: $warm-grey-four;
     }
   }
 }
