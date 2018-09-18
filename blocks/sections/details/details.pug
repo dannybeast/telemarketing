@@ -1,0 +1,20 @@
+mixin details(itemTitle, itemDate, itemChoose, itemSrc)
+  +b.SECTION.details
+    .container
+      +e.row
+        +e.left
+          +e.H1.title #{itemTitle}
+          if itemDate
+            +e.P.date #{itemDate}
+        +e.right
+
+          if itemChoose == "photo"
+            +e.photo
+              img(src=itemSrc, alt="")
+          else if itemChoose == "video"
+            +e.video
+              iframe(width='100%', src=itemSrc, frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+      
+      if block
+        block
+        
