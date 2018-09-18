@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- title-->
-    <title>SMS-рассылка</title>
+    <title>E-mail рассылка</title>
     <!-- description-->
     <meta name="description" content="Описание страницы">
     <!-- responsive-->
@@ -17,9 +17,7 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <!-- build:css css/main.min.css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild-->
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
     <!-- notice-->
@@ -36,7 +34,7 @@
       <div class="page-content">
         <!-- шапка-->
         <!-- header-->
-        <header class="header"><a class="header__logo" href="index.html"><img src="img/logo/logo.svg" alt=""></a>
+        <header class="header"><a class="header__logo" href="/"><img src="img/logo/logo.svg" alt=""></a>
           <div class="nav-icon-wrap">
             <div id="nav-icon"><span></span><span></span><span></span><span></span></div>
           </div>
@@ -66,24 +64,36 @@
         <main role="main">
           <section class="breadcrumbs">
             <div class="container">
-              <div class="breadcrumbs__links"><a href="#">Главная </a><span class="separator">/</span><a href="#">Услуги</a><span class="separator">/</span><a href="#">SMS-рассылка</a>
+              <div class="breadcrumbs__links"><a href="#">Главная</a><span class="separator">/</span><a href="#">Услуги</a><span class="separator">/</span><a href="#">E-mail рассылка</a>
               </div>
             </div>
           </section>
-          <section class="sms-section">
+          <section class="email-section">
             <div class="container">
-              <div class="sms-section__sms-block">
-                <div class="sms-section__left">
-                  <h1 class="sms-section__title">SMS-рассылка
+              <div class="email-section__email-block">
+                <div class="email-section__left">
+                  <h1 class="email-section__title">E-mail рассылка
                   </h1>
-                  <p class="sms-section__info">Распространение персонализированных информационных или рекламных сообщений от вашей компании. SMS-информирование широко используется банками и платежными системами, ритейлом, службами доставки еды и заказа такси, а также государственными заказчиками. По статистике, 97,5% получателей открывают сообщение в течение 5 секунд после его получения
+                  <p class="email-section__info">Услуга, которая позволяет осуществлять массовую передачу персонализированных e-mail вашим клиентам и анализировать их поведение на основе статистических данных. Высокая скорость работы и отказоустойчивость, личный кабинет для управлениями услугами, интеграция сервиса с внешними системами автоматизации бизнеса по SMTP
                   </p>
                 </div>
-                <div class="sms-section__right">
-                  <div class="sms-section__right-wrap">
-                    <div class="sms-section__message-wrap">
-                      <div class="sms-section__text">Мария, приглашаем вас отпраздновать День Рождения салон Моне! Ждем вас в 18.00 по адресу Якиманка, 3.<br>В программе конкурсы, подарки и мастер-классы от звезд парикмахерского искусства!<br>Пароль для входа: «именины Моне»
+                <div class="email-section__right">
+                  <div class="email-section__right-wrap">
+                    <div class="email-section__text-wrap">
+                      <div class="email-section__user-info">
+                        <p class="email-section__email-title">e-mail информирование:
+                        </p>
+                        <p class="email-section__from">От: <span>Telemarketing4you</span>
+                        </p>
+                        <p class="email-section__to">Кому: <span>Мария Никифорова</span>
+                        </p>
+                        <p class="email-section__copy">Копия: <span>Филипп Никифоров</span>
+                        </p>
                       </div>
+                      <p class="email-section__text">Доброе утро, Мария! Telemarketing4you перевернет Ваше представление об операторе мобильного маркетинга! Мы не просим верить нам на слово, вы можете доверится нашим клиентам, узнав об их опыте в разделах Кейсы и Клиенты.
+                      </p>
+                      <p class="email-section__bottom">С уважением, <br> Telemarketing4you
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -92,26 +102,21 @@
           </section>
           <section class="adventages-section">
             <div class="container">
-              <h2 class="adventages-section__title">Пакет сервисных услуг
+              <h2 class="adventages-section__title">Преимущества
               </h2>
               <div class="adventages-section__list">
-                <div class="adventages-section__left">
-                  <ul>
-                    <li>Круглосуточная служба Клиентского Сервиса</li>
-                    <li>Юридическая поддержка интересов клиентов при возникновении претензий со стороны регулирующих органов</li>
-                    <li>Маркетинговый консалтинг при организации информационных и рекламных кампаний, помощь в составлении эффективных сообщений</li>
-                    <li>CRM консалтинг: содействие в организации коммуникационных стратегий, сегментировании клиентов, аналитике</li>
-                    <li>Двухуровневая система премодерации трафика, минимизация рисков при отправлении</li>
-                  </ul>
-                </div>
-                <div class="adventages-section__right">
-                  <ul>
-                    <li>Упрощенное бизнес-администрирование: предоставление единой «точки входа» для работы со всеми операторами, один договор, единый счет и детализация</li>
-                    <li>Сервис маршрутизации SMS-сообщений: автоматическая сегментация базы клиентов для каждого оператора, отсутствие проблем с портированными номерами</li>
-                    <li>Интеграция с любыми информационными и CRM системами</li>
-                    <li>Возможность создания мультиканальных коммуникационных кампаний с использованием SMS, Email и других инструментов</li>
-                  </ul>
-                </div>
+                <ul>
+                  <li>Оперативное уведомление своих потенциальных и действующих клиентов о скидках и акциях</li>
+                  <li>Информирование о проведении мероприятий, новых товарах и услугах</li>
+                  <li>Регулярная отправка деловых новостей подписчикам</li>
+                  <li>Привлечение дополнительного трафика на свой сайт</li>
+                </ul>
+                <ul>
+                  <li>Работа с клиентом в рамках программ лояльности и рекламных акций</li>
+                  <li>Сбор и анализ статистики по проведенной рассылке</li>
+                  <li>Простое и быстрое создание индивидуального макета письма</li>
+                  <li>Возможность интеграции с внешними системами</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -152,7 +157,7 @@
                 </li>
                 <li class="footer__item"><a class="footer__link" href="#">Прием SMS</a>
                 </li>
-                <li class="footer__item"><a class="footer__link" href="email.html">E-mail рассылка</a>
+                <li class="footer__item"><a class="footer__link" href="#">E-mail рассылка</a>
                 </li>
                 <li class="footer__item"><a class="footer__link" href="#">HLR-запрос</a>
                 </li>
@@ -252,10 +257,7 @@
     </div>
     <!-- Модальные окна-->
     <!-- scripts-->
-    <!-- build:js js/vendor.min.js-->
-    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
-    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <!--endbuild-->
+    <script src="js/vendor.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

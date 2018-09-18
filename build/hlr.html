@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- title-->
-    <title>SMS-рассылка</title>
+    <title>HLR рассылка</title>
     <!-- description-->
     <meta name="description" content="Описание страницы">
     <!-- responsive-->
@@ -17,9 +17,7 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <!-- build:css css/main.min.css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild-->
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
     <!-- notice-->
@@ -36,7 +34,7 @@
       <div class="page-content">
         <!-- шапка-->
         <!-- header-->
-        <header class="header"><a class="header__logo" href="index.html"><img src="img/logo/logo.svg" alt=""></a>
+        <header class="header"><a class="header__logo" href="/"><img src="img/logo/logo.svg" alt=""></a>
           <div class="nav-icon-wrap">
             <div id="nav-icon"><span></span><span></span><span></span><span></span></div>
           </div>
@@ -66,25 +64,21 @@
         <main role="main">
           <section class="breadcrumbs">
             <div class="container">
-              <div class="breadcrumbs__links"><a href="#">Главная </a><span class="separator">/</span><a href="#">Услуги</a><span class="separator">/</span><a href="#">SMS-рассылка</a>
+              <div class="breadcrumbs__links"><a href="#">Главная</a><span class="separator">/</span><a href="#">Услуги</a><span class="separator">/</span><a href="#">HLR-запрос</a>
               </div>
             </div>
           </section>
-          <section class="sms-section">
+          <section class="hlr-section">
             <div class="container">
-              <div class="sms-section__sms-block">
-                <div class="sms-section__left">
-                  <h1 class="sms-section__title">SMS-рассылка
+              <div class="hlr-section__hlr-block">
+                <div class="hlr-section__left">
+                  <h1 class="hlr-section__title">HLR запросы
                   </h1>
-                  <p class="sms-section__info">Распространение персонализированных информационных или рекламных сообщений от вашей компании. SMS-информирование широко используется банками и платежными системами, ритейлом, службами доставки еды и заказа такси, а также государственными заказчиками. По статистике, 97,5% получателей открывают сообщение в течение 5 секунд после его получения
+                  <p class="hlr-section__info">Услуга по проверке статуса мобильного номера абонента: активен, не обслуживается, в роуминге или домашней сети. Сервис незаметен для абонента, так как запрос отправляется к базе данных оператора сотовой связи, который обслуживает данный телефонный номер
                   </p>
                 </div>
-                <div class="sms-section__right">
-                  <div class="sms-section__right-wrap">
-                    <div class="sms-section__message-wrap">
-                      <div class="sms-section__text">Мария, приглашаем вас отпраздновать День Рождения салон Моне! Ждем вас в 18.00 по адресу Якиманка, 3.<br>В программе конкурсы, подарки и мастер-классы от звезд парикмахерского искусства!<br>Пароль для входа: «именины Моне»
-                      </div>
-                    </div>
+                <div class="hlr-section__right">
+                  <div class="hlr-section__right-wrap">
                   </div>
                 </div>
               </div>
@@ -92,24 +86,20 @@
           </section>
           <section class="adventages-section">
             <div class="container">
-              <h2 class="adventages-section__title">Пакет сервисных услуг
+              <h2 class="adventages-section__title">Преимущества
               </h2>
               <div class="adventages-section__list">
                 <div class="adventages-section__left">
                   <ul>
-                    <li>Круглосуточная служба Клиентского Сервиса</li>
-                    <li>Юридическая поддержка интересов клиентов при возникновении претензий со стороны регулирующих органов</li>
-                    <li>Маркетинговый консалтинг при организации информационных и рекламных кампаний, помощь в составлении эффективных сообщений</li>
-                    <li>CRM консалтинг: содействие в организации коммуникационных стратегий, сегментировании клиентов, аналитике</li>
-                    <li>Двухуровневая система премодерации трафика, минимизация рисков при отправлении</li>
+                    <li>Выявление действующих и недействующих абонентских номеров</li>
+                    <li>Актуализация базы номеров</li>
+                    <li>Оптимизация средств на рекламную кампанию в высокий отпускной сезон</li>
                   </ul>
                 </div>
                 <div class="adventages-section__right">
                   <ul>
-                    <li>Упрощенное бизнес-администрирование: предоставление единой «точки входа» для работы со всеми операторами, один договор, единый счет и детализация</li>
-                    <li>Сервис маршрутизации SMS-сообщений: автоматическая сегментация базы клиентов для каждого оператора, отсутствие проблем с портированными номерами</li>
-                    <li>Интеграция с любыми информационными и CRM системами</li>
-                    <li>Возможность создания мультиканальных коммуникационных кампаний с использованием SMS, Email и других инструментов</li>
+                    <li>Определение оператора, обслуживающего телефонный номер</li>
+                    <li>Сбор и анализ статистики через личный кабинет</li>
                   </ul>
                 </div>
               </div>
@@ -152,7 +142,7 @@
                 </li>
                 <li class="footer__item"><a class="footer__link" href="#">Прием SMS</a>
                 </li>
-                <li class="footer__item"><a class="footer__link" href="email.html">E-mail рассылка</a>
+                <li class="footer__item"><a class="footer__link" href="#">E-mail рассылка</a>
                 </li>
                 <li class="footer__item"><a class="footer__link" href="#">HLR-запрос</a>
                 </li>
@@ -252,10 +242,7 @@
     </div>
     <!-- Модальные окна-->
     <!-- scripts-->
-    <!-- build:js js/vendor.min.js-->
-    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
-    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <!--endbuild-->
+    <script src="js/vendor.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
