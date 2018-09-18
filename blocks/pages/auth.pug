@@ -1,16 +1,16 @@
 extends ../layout/layout
-include ../sections/path/path
+include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
 
 block variables 
   - var pageClass = '';
-  - var pageTitle = "SMS-рассылка";
+  - var pageTitle = "Двухфакторная аутентификация";
   - var pageDescription = "Описание страницы"
-  - var pageName = "sms"
+  - var pageName = "d-auth"
 
 block content
   +b.MAIN(role='main')
-    +path
+    +breadcrumbs
       a(href="#") Главная
       span.separator /
       a(href="#") Услуги
