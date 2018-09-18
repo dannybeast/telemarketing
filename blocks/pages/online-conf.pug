@@ -3,9 +3,9 @@ include ../sections/breadcrumbs/breadcrumbs
 
 block variables 
   - var pageClass = '';
-  - var pageTitle = "Онлайн-конференция";
-  - var pageDescription = "Описание страницы"
-  - var pageName = "index"
+  - var pageTitle = "Онлайн-конференция «Мобильная реклама»";
+  - var pageDescription = ""
+  - var pageName = ""
 
 block content
   +b.MAIN(role='main')
@@ -17,4 +17,7 @@ block content
       a(href="#") Видеозаписи
       span.separator /
       a(href="#") Онлайн конференции
-    include ../sections/conference/conference
+    include ../sections/details/details
+    +details("Онлайн-конференция «Мобильная реклама»", "20 Апреля 2016", "video", "https://www.youtube.com/embed/Q53Fs0_7k_s")
+      +e.DIV.info 
+        p Спикеры: Евгений Фадеев - директор по маркетингу Devino Telecom; Борис Молчанов – консультант по развитию клиентов Devino Telecom, приглашенный эксперт - Лариса Татарова, руководитель отдела продаж Департамента «Мобильная реклама» компании Stream

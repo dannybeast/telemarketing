@@ -1,0 +1,21 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Кулинарный воркшоп CRM World Club KZ в Алматы";
+  - var pageDescription = ""
+  - var pageName = ""
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") CRM World Club
+      span.separator /
+      a(href="#") Кулинарный воркшоп CRM World Club KZ в Алматы
+    include ../sections/details/details
+    +details("Кулинарный воркшоп CRM World Club KZ в Алматы", "", "photo", "img/world-club-details.jpg")
+      +e.DIV.info 
+        p В неформальной обстановке каждая компания свободно делилась опытом в области мобильного маркетинга. Располагающая, дружественная обстановка помогла сблизиться участникам встречи и быть более откровенными в обсуждении вопросов сообщества. Представленный участником опыт разбирали, в процессе готовки блюд, каждый сопоставляя со своим опытом в области маркетинговых коммуникаций. Участники встречи: АО «Жилстройсбербанк Казахстана», ТОО «Arena S»/Sulpak, ТОО «Gulser Computers»/ALSER, Группа компаний K&K (KIMEX, GRAZIE, MANGO, PROMOD), Metro Cash&Carry Kazakhstan, Mon Amie, ТОО «Provence»/Loccitane, ТОО «Sabiland», ТОО «Technodom Operator». 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
@@ -3170,6 +3171,10 @@ body {
 main {
   position: relative; }
 
+a {
+  text-decoration: none;
+  color: #1838e0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -4110,13 +4115,23 @@ footer {
     padding-bottom: 15px; }
     .breadcrumbs__links a:hover {
       color: #1838e0; }
-  .breadcrumbs__links span {
+  .breadcrumbs__links .separator {
     padding-bottom: 15px;
     font-size: 12px;
     font-weight: 300;
-    color: #aeadad; }
+    color: #aeadad;
+    margin: 0 5px; }
 
-.conference__conf-block {
+@media only screen and (max-width: 992px) {
+  .breadcrumbs {
+    overflow: auto; }
+    .breadcrumbs__links {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      white-space: nowrap; } }
+
+.details__row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4125,54 +4140,100 @@ footer {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding-top: 70px; }
 
-.conference__left {
-  padding-top: 30px; }
+.details__left {
+  padding-top: 30px;
+  width: 40%;
+  padding-right: 20px; }
 
-.conference__title {
+.details__title {
   font-size: 41.5px;
   color: #000000;
   line-height: 48.5px;
-  font-weight: 300;
-  padding-right: 20px; }
+  font-weight: 300; }
 
-.conference__date {
+.details__date {
   margin-top: 55px;
   color: #c3c3c4;
   font-size: 16px;
   font-weight: 300; }
 
-.conference__info {
+.details__right {
+  width: 60%; }
+
+.details__photo img {
+  display: block;
+  max-width: 100%; }
+
+.details__video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /*пропорции видео 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .details__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.details__info {
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   font-size: 20px;
   font-weight: 300;
-  line-height: 30px;
-  color: #000000;
-  width: 70%; }
+  line-height: 1.5;
+  color: #000000; }
+  .details__info h3 {
+    text-transform: uppercase; }
+  .details__info img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 30px; }
+    .details__info img:last-child {
+      margin-bottom: 0; }
+  .details__info p {
+    margin-bottom: 30px;
+    width: 87%; }
+    .details__info p:last-child {
+      margin-bottom: 0; }
 
-@media only screen and (max-width: 892px) {
-  .conference__title {
-    padding-right: 0; }
-  .conference__conf-block {
+@media only screen and (max-width: 992px) {
+  .details__title {
+    font-size: 32px;
+    line-height: 1.1; }
+  .details__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .conference__date {
+            flex-direction: column;
+    padding-top: 0; }
+  .details__date {
     margin-top: 30px; }
-  .conference__right {
-    margin-top: 20px; }
-  .conference__video {
+  .details__left {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 30px; }
+  .details__right {
+    margin-top: 20px;
     width: 100%; }
-    .conference__video iframe {
+  .details__video {
+    width: 100%; }
+    .details__video iframe {
       width: 100%; }
-  .conference__info {
+  .details__info {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 100px; } }
+    padding-bottom: 100px;
+    font-size: 16px; }
+    .details__info p {
+      width: 100%; } }
 
 .email-section {
   border-bottom: 1px solid #d2d2d2; }
