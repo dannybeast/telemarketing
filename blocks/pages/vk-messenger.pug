@@ -1,0 +1,29 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Сервисные сообщения ВКонтакте";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "vk-messenger"
+
+block content
+  +b.MAIN(role='main').vk-messenger-page
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") VK Messenger
+    include ../sections/vk-messenger-section/vk-messenger-section
+    +advantages("Преимущества")
+      ul
+        li Охват аудитории VK более 97 миллионов посетителей в месяц
+        li Верификационные сообщения с кодом или гиперссылкой
+        li Защищенная передача данных
+        li Отправка текстовых сообщений до 2048 символов
+      ul
+        li Настраиваемый интервал "жизни" сообщения от 1 минуты до 24 часов с возможностью переотправки по SMS
+        li 90% пользователей получают уведомления в течение 24 часов в мобильное приложение или браузер
+        li Компания-отправитель не получает информацию о персональной странице пользователя в социальной сети
