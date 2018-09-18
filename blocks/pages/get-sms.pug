@@ -1,0 +1,32 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Виртуальные номера для приема SMS";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "get-sms"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") Привем SMS
+    include ../sections/get-sms-section/get-sms-section
+    +advantages("Преимущества")
+      ul
+        li Бесплатное подключение для ряда номеров
+        li Онлайн-статистика в личном кабинете через интернет-браузер
+        li Отправка уникального ответного SMS-сообщения
+        li Возможность выделения «Золотых номеров»
+        li Высокие проценты выплат
+      ul
+        li Последующая выгрузка данных в CSV
+        li Передача данных на внешний скрипт по HTTPS или SMPP-протоколам для дальнейшей обработки
+        li Отправка данных на заданный E-mail
+        li Индивидуальный "красивый" короткий номер
+    include ../sections/connection/connection

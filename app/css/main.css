@@ -4681,3 +4681,129 @@ footer {
 @media only screen and (max-width: 767px) {
   .events__row .card-wrap {
     width: 100%; } }
+
+.get-sms-section {
+  border-bottom: 1px solid #d2d2d2; }
+  .get-sms-section__get-sms-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 95px; }
+  .get-sms-section__left {
+    padding-right: 80px; }
+  .get-sms-section__title {
+    font-size: 41.5px;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .get-sms-section__info {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300; }
+  .get-sms-section__right {
+    margin-bottom: 10px;
+    width: 340px;
+    height: 409px; }
+  .get-sms-section__right-wrap {
+    position: relative;
+    width: 340px;
+    height: 409px;
+    background: url(../img/get-sms.jpg) center no-repeat;
+    background-size: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .get-sms-section__get-sms-block {
+    margin-top: 50px; }
+  .get-sms-section__left {
+    padding-bottom: 50px; } }
+
+@media only screen and (max-width: 767px) {
+  .get-sms-section__get-sms-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .get-sms-section__left {
+    margin-top: 0;
+    padding: 0; }
+  .get-sms-section__right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+    width: 100%; }
+  .get-sms-section__right-wrap {
+    width: 320px; } }
+
+.viber-section {
+  border-bottom: 1px solid #d2d2d2; }
+  .viber-section__viber-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 95px; }
+  .viber-section__left {
+    padding-right: 80px; }
+  .viber-section__title {
+    font-size: 41.5px;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .viber-section__info {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300; }
+  .viber-section__right {
+    margin-bottom: 10px;
+    width: 340px;
+    height: 409px; }
+  .viber-section__right-wrap {
+    position: relative;
+    width: 340px;
+    height: 409px;
+    background: url(../img/viber.jpg) center no-repeat;
+    background-size: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .viber-section__viber-block {
+    margin-top: 50px; }
+  .viber-section__left {
+    padding-bottom: 50px; } }
+
+@media only screen and (max-width: 767px) {
+  .viber-section__viber-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .viber-section__left {
+    margin-top: 0;
+    padding: 0; }
+  .viber-section__right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+    width: 100%; }
+  .viber-section__right-wrap {
+    width: 320px; } }

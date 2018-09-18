@@ -1,0 +1,31 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Официальный Viber";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "viber"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") Официальный Viber
+    include ../sections/viber-section/viber-section
+    +advantages("Преимущества")
+      ul
+        li Текст до 1000 символов
+        li Контроль доставки сообщений
+        li Высокая эффективность (лояльная аудитория)
+        li Кликабельные ссылки
+      ul
+        li Низкая стоимость по сравнению с SMS
+        li Широкие мультимедийные возможности
+        li Интеграция с любыми информационными и CRM системами
+        li Процент доставки сервисных сообщений Viber может превышать 40%
+    include ../sections/connection/connection
