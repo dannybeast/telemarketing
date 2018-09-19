@@ -1,0 +1,34 @@
+.expert-section{
+  padding-bottom: 100px;
+  &__title{
+    font-size: 31px;
+    margin-bottom: 65px;
+  }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    .picture-item{
+      width: 33%;
+    }
+  }
+}
+
+@media only screen and (max-width:992px){
+  .expert-section{
+    &__row{
+      .picture-item{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:767px){
+  .expert-section{
+    &__row{
+      .picture-item{
+        width: 100%;
+      }
+    }
+  }
+}
