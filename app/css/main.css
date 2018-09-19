@@ -4687,13 +4687,37 @@ footer {
   .form-section__inputs .form {
     width: 100%; } }
 
-.events {
-  padding-bottom: 112px; }
-  .events__title {
+.events .container {
+  border-bottom: 1px solid #d2d2d2; }
+
+.events__title {
+  font-size: 31px;
+  font-weight: 300;
+  margin: 13px 0; }
+
+.events .event {
+  padding: 78px 0; }
+  .events .event__title {
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 300;
+    margin-bottom: 74px; }
+  .events .event__date {
+    font-size: 31px;
+    font-weight: 300;
+    color: #898989;
+    margin-bottom: 63px; }
+  .events .event__link {
     font-size: 20.5px;
-    margin-top: 58px;
+    font-weight: 300; }
+
+.past-events {
+  padding-bottom: 112px; }
+  .past-events__title {
+    font-size: 20.5px;
+    margin-top: 46px;
     margin-bottom: 58px; }
-  .events__row {
+  .past-events__row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4702,18 +4726,18 @@ footer {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     margin: -17.5px; }
-    .events__row .card-wrap {
+    .past-events__row .card-wrap {
       margin: 17.5px;
       width: -webkit-calc(33% - 35px);
       width: calc(33% - 35px); }
 
 @media only screen and (max-width: 992px) {
-  .events__row .card-wrap {
+  .past-events__row .card-wrap {
     width: -webkit-calc(50% - 35px);
     width: calc(50% - 35px); } }
 
 @media only screen and (max-width: 767px) {
-  .events__row .card-wrap {
+  .past-events__row .card-wrap {
     width: 100%; } }
 
 .get-sms-section {

@@ -1,0 +1,9 @@
+mixin picture-item(itemSrc)
+  +b.picture-item
+    img(src=itemSrc)
+    if block
+      block
+    else
+      //Пример
+      +e.H4.title Заголовок карточки
+      +e.P.text Текст карточки Текст карточки Текст карточки Текст карточки Текст карточки Текст карточки Текст карточки Текст карточки
