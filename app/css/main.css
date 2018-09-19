@@ -3356,7 +3356,11 @@ footer {
     width: 100%;
     height: inherit;
     line-height: inherit;
-    padding: 15px 30px; } }
+    padding: 15px 30px; }
+  .header-podmenu {
+    position: relative;
+    top: auto;
+    width: 100%; } }
 
 @media only screen and (max-width: 767px) {
   .header {
@@ -3365,7 +3369,9 @@ footer {
     .header__right {
       margin-right: -15px; }
     .header__link {
-      padding: 15px; } }
+      padding: 15px; }
+  .header-podmenu {
+    padding: 10px; } }
 
 .footer {
   background: #efefef;
