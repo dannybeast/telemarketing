@@ -4550,3 +4550,27 @@ footer {
 @media only screen and (max-width: 767px) {
   .past-events__row .card-wrap {
     width: 100%; } }
+
+.expert-section {
+  padding-bottom: 100px; }
+  .expert-section__title {
+    font-size: 31px;
+    margin-bottom: 65px; }
+  .expert-section__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .expert-section__row .picture-item {
+      width: 33%; }
+
+@media only screen and (max-width: 992px) {
+  .expert-section__row .picture-item {
+    width: 50%; } }
+
+@media only screen and (max-width: 767px) {
+  .expert-section__row .picture-item {
+    width: 100%; } }
