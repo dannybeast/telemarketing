@@ -4910,5 +4910,81 @@ footer {
   .mobile-ad-section__left {
     margin-top: 0; } }
 
+.consulting-section {
+  border-bottom: 1px solid #d2d2d2; }
+  .consulting-section__consulting-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 204px;
+    margin-bottom: 121px; }
+  .consulting-section__left {
+    padding-right: 80px; }
+  .consulting-section__title {
+    font-size: 41.5px;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .consulting-section__info {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300; }
+  .consulting-section__right {
+    margin-bottom: 10px;
+    width: 343px;
+    height: 149px; }
+  .consulting-section__right-wrap {
+    position: relative;
+    width: 343px;
+    height: 149px;
+    background: url(../img/consulting.svg) center no-repeat;
+    background-size: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .consulting-section__consulting-block {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .consulting-section__left {
+    padding-bottom: 50px; } }
+
+@media only screen and (max-width: 767px) {
+  .consulting-section__consulting-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .consulting-section__left {
+    margin-top: 0;
+    padding: 0; }
+  .consulting-section__right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+    width: 100%; }
+  .consulting-section__right-wrap {
+    width: 320px; } }
+
 .vk-messenger-page .adventages-section {
   margin-bottom: 173px; }
+
+.consulting-page .adventages-section {
+  margin-bottom: 215px; }
+
+@media only screen and (max-width: 992px) {
+  .consulting-page .adventages-section {
+    margin-bottom: 100px; } }

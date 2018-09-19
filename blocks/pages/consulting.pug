@@ -1,0 +1,28 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Сервисные сообщения ВКонтакте";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "vk-messenger"
+
+block content
+  +b.MAIN(role='main').consulting-page
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") Консалтинг
+    include ../sections/consulting-section/consulting-section
+    +advantages("Преимущества")
+      ul
+        li Юридические консультации по вопросам соблюдения законов №38-ФЗ «О рекламе», №126-ФЗ «О связи» и №152-ФЗ «О защите персональных данных»
+        li Разработка коммуникационной стратегии
+        li Подбор информационных поводов для рекламной кампании с учетом отраслевых и продуктовых особенностей
+      ul
+        li Копирайт и креатив SMS-сообщений
+        li CRM-консалтинг: помощь в сборе и сегментации базы, аналитика результатов кампаний
+        li Оценка эффективности информационных и рекламных кампаний
