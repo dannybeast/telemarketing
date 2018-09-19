@@ -3292,7 +3292,8 @@ footer {
   .header__list {
     list-style: none; }
   .header__item {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
   .header__link {
     display: block;
     color: #fff;
@@ -3303,6 +3304,33 @@ footer {
     line-height: 60px; }
     .header__link:hover {
       background: #2c2c2c; }
+    .header__link.active {
+      background: #dbdbdb;
+      color: #000000; }
+
+.header-podmenu {
+  position: absolute;
+  width: 480px;
+  top: 60px;
+  background: #dbdbdb;
+  padding: 16px 23px;
+  display: none;
+  cursor: pointer; }
+  .header-podmenu.show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .header-podmenu__group {
+    width: 50%; }
+  .header-podmenu .group-list__link {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 8px;
+    display: block; }
+    .header-podmenu .group-list__link:hover {
+      background: #fff; }
 
 @media only screen and (max-width: 1080px) {
   .header__logo {
