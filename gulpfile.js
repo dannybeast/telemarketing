@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require('gulp'),
+	  path = require('path'),
 		pug = require('gulp-pug'),
 		sass = require('gulp-sass'),
 		concat = require('gulp-concat'),
@@ -22,7 +23,6 @@ var paths = {
 			devDir: 'app/',
 			outputDir: 'build/'
 		};
-
 
 /*********************************
 		Developer tasks

@@ -1,20 +1,37 @@
-.form{
+.input-block{
   display: block;
   position: relative;
+  cursor: text;
+  &--focus{
+    .input-block__name{
+      font-size: 18px;
+      top: 2px;
+    }
+  }
   input{
     padding-left: 22px;
     height: 60px;
     width: 100%;
     border: 1px solid $pinkish-grey;
-    font-size: 16px;
+    font-size: 24px;
+    padding-top: 12px;
   }
-  span{
+  &--error{
+    input{
+      border-color: red;
+    }
+    .input-block__name{
+      color:red;
+    }
+  }
+  &__name{
     color: $pinkish-grey;
     font-size: 31px;
     position: absolute;
+    font-weight: 300;
     left: 22px;
     top: calc(50% - 15px);
-    transition: all .2s ease;
+    transition: all .3s ease;
   }
   &.active{
     input{

@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -15,8 +16,12 @@ block content
       span.separator /
       a(href="#") Услуги
       span.separator /
-      a(href="#") SMS-рассылка
-    include ../sections/auth-section/auth-section
+      a(href="#") Двухфакторная аутентификация
+    
+    +service-intro("img/phone-auth.png")
+      +e.H1.title Сервис двухфакторной аутентификации
+      +e.P.info Метод идентификации пользователя в каком-либо сервисе, где используются два различных типа аутентификационных данных. Введение дополнительного уровня безопасности обеспечивает более эффективную защиту аккаунта от несанкционированного доступа.
+
     +advantages("Преимущества")
       ul
         li Высококвалифицированная техническая поддержка 24/7/365
@@ -28,4 +33,3 @@ block content
         li Высокая скорость доставки одноразовых паролей по смс. Мы используем собственную платформу для отправки смс-сообщений непосредственно в сети операторов, что гарантирует высокую скорость доставки.
     include ../sections/connection/connection
     include ../sections/form/form
-    include ../sections/events/events
