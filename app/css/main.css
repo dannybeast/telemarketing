@@ -3752,6 +3752,26 @@ footer {
   .card-wrap .info-item__link {
     margin-top: 20px; }
 
+.picture-item {
+  position: relative; }
+  .picture-item img {
+    display: block;
+    width: 100%; }
+  .picture-item__text-wrap {
+    position: absolute;
+    left: 28px;
+    bottom: 32px;
+    right: 28px; }
+  .picture-item__title {
+    font-size: 20.5px;
+    color: #fff;
+    margin-bottom: 32px; }
+  .picture-item__text {
+    font-size: 17.5px;
+    line-height: 20.5px;
+    font-weight: 300;
+    color: #fff; }
+
 .intro {
   font-weight: 300; }
   .intro__title-block {
