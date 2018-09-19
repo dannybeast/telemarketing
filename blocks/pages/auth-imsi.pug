@@ -1,0 +1,37 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Cервис аутентификации IMSI";
+  - var pageDescription = ""
+  - var pageName = "auth-imsi"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") Cервис аутентификации IMSI
+    
+    +service-intro("img/imsi.svg", "--pb")
+      +e.H1.title Cервис аутентификации IMSI
+      +e.P.info Технология проверки подлинности SIM-карт посредством проверки уникального кода IMSI используется для обеспечения безопасности передачи разовых паролей, необходимых для входа в интернет-банк.
+
+    +advantages("Преимущества")
+      ul
+        li Верификация SIM-карты клиента при отправке SMS-сообщений и кодов
+        li Повышение безопасности работы в системах ДБО при 
+          |  использовании транспорта SMS для доставки сессионных 
+          |  паролей
+        li Пропускная способность 500 запросов/сек с 
+          | возможностью увеличения до 1000 запросов/сек
+      ul
+        li Полноценное сетевое и серверное резервирование всех звеньев процесса предоставления услуги
+        li Возможность «легкой» интеграции сервиса за счет опыта и технологий компании Telemarketing4you
+        li На сегодняшний день успешно эксплуатируется в следующих банках: Альфа Банк, Сбербанк России, Банк Русский Стандарт, Банк Тинькофф Кредитные Системы.
+    include ../sections/connection/connection
