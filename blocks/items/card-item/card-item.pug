@@ -2,7 +2,7 @@ include ../info-item/info-item
 mixin card-item(link, itemSrc)
   +b.A(href=link).card-wrap
     +e.image
-      img(src=itemSrc)
+      img(src=itemSrc, alt="Изображение")
     +info-item(link,"yes")
       +e.SPAN.date 18 Июля 2018, 18:00
       +e.H3.title Кулинарный воркшоп CRM World Club KZ в Алматы

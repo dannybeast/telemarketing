@@ -1,6 +1,6 @@
 mixin picture-item(itemSrc)
   +b.picture-item
-    img(src=itemSrc)
+    img(src=itemSrc, alt="Изображение")
     +e.text-wrap
       if block
         block
