@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,12 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") Официальный Viber
-    include ../sections/viber-section/viber-section
+    
+    +service-intro("img/phone-viber.png")
+      +e.H1.title Официальный Viber
+      +e.P.info Официальный сервис доставки сервисных сообщений, одобренный компанией Viber.<br>Благодаря гарантированной доставке сообщений и ряду уникальных преимуществ, рассылка в Viber становится одним из самых перспективных и эффективных способов информирования!
+      
+
     +advantages("Преимущества")
       ul
         li Текст до 1000 символов

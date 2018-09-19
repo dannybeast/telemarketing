@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,11 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") HLR-запрос
-    include ../sections/hlr-section/hlr-section
+
+    +service-intro("img/hlr.png")
+      +e.H1.title HLR запросы
+      +e.P.info Услуга по проверке статуса мобильного номера абонента: активен, не обслуживается, в роуминге или домашней сети. Сервис незаметен для абонента, так как запрос отправляется к базе данных оператора сотовой связи, который обслуживает данный телефонный номер
+    
     +advantages("Преимущества")
         ul
           li Выявление действующих и недействующих абонентских номеров

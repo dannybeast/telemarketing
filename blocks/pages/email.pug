@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,11 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") E-mail рассылка
-    include ../sections/email/email
+
+    +service-intro("img/phone-email.png")
+      +e.H1.title E-mail рассылка
+      +e.P.info Услуга, которая позволяет осуществлять массовую передачу персонализированных e-mail вашим клиентам и анализировать их поведение на основе статистических данных. Высокая скорость работы и отказоустойчивость, личный кабинет для управлениями услугами, интеграция сервиса с внешними системами автоматизации бизнеса по SMTP
+    
     +advantages("Преимущества")
  
         ul

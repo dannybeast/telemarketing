@@ -1,4 +1,5 @@
 .adventages-section{
+  padding-bottom: 100px;
   &__title{
     font-size: 31.5px;
     font-weight: 300;
@@ -9,11 +10,11 @@
   &__list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -70px;
-    padding-right: -70px;
+    margin-left: -50px;
+    padding-right: -50px;
     ul{
-      max-width: 50%;
-      padding: 0 70px;
+      width: 50%;
+      padding: 0 50px;
     }
   }
   li{
@@ -38,14 +39,11 @@
 
 @media only screen and (max-width:992px){
   .adventages-section{
-
     &__list{
       display: flex;
       margin-left: -30px;
       padding-right: -30px;
-
       ul{
-        max-width: 50%;
         padding: 0 30px;
       }
     }
@@ -56,10 +54,11 @@
 
 @media only screen and (max-width:767px){
   .adventages-section{
+    padding-bottom: 50px;
     &__list{
       flex-direction: column;
       ul{
-        max-width: 100%;
+        width: 100%;
         padding: 0 0 0 30px;
       }
     }

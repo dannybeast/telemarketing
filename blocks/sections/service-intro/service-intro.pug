@@ -1,0 +1,11 @@
+mixin service-intro(srcImage, sectionClass)
+  +b.SECTION.service-intro(class=sectionClass)
+    .container
+      +e.row
+        +e.left
+          if block
+            block
+        if srcImage
+          +e.right
+            +e.IMG.image(src=srcImage, alt="")
+          

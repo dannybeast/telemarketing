@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,11 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") Мобильная реклама
-    include ../sections/mobile-ad-section/mobile-ad-section
+
+    +service-intro("", "--pb")
+      +e.H1.title Мобильная реклама
+      +e.P.info Продвижение услуг по базам операторов "Большой Тройки". Сообщение будет отправлено абонентам, давшим свое согласие. Доступны форматы SMS-, MMS-сообщений, USSD и различные варианты таргетирования (пол, возраст, география)
+    
     +advantages("Преимущества")
       ul
         li Тесный контакт с клиентом за счет доставки рекламного сообщения «прямо в руки» абоненту и его прочтения в 98 % случаев

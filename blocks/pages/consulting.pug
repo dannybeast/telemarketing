@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,11 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") Консалтинг
-    include ../sections/consulting-section/consulting-section
+    
+    +service-intro("img/consulting.svg", "--pb")
+      +e.H1.title Консалтинг
+      +e.P.info Telemarketing4you оказывает своим клиентам юридическую и маркетинговую поддержку. Юридические консультации, содействие в организации эффективных коммуникационных стратегий под конкретные бизнес-задачи, сегментация существующей базы и аналитика эффективности информационных кампаний
+
     +advantages("Преимущества")
       ul
         li Юридические консультации по вопросам соблюдения законов №38-ФЗ «О рекламе», №126-ФЗ «О связи» и №152-ФЗ «О защите персональных данных»
