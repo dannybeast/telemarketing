@@ -11,6 +11,7 @@
     right: 0;
     z-index: 15;
 
+
     &__right{
         display: flex;
         align-items: center;
@@ -68,6 +69,7 @@
     }
     &__item{
         display: inline-block;
+        position: relative;
     }
     &__link{
         display: block;
@@ -80,9 +82,41 @@
         &:hover{
             background: $black-five;
         }
+        &.active{
+            background: $gray;
+            color:$black;
+        }
     }
 }
 
+.header-podmenu{
+    position: absolute;
+    width: 480px;
+    top: 60px;
+    background: $gray;
+    padding: 16px 23px;
+    display: none;
+    cursor: pointer;
+    &.show{
+        display: flex;
+    }
+    &__group{
+        width: 50%;
+    }
+    .group-list{
+        
+        &__link{
+            color:$black;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 10px 8px;
+            display: block;
+            &:hover{
+                background:$white;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width:1080px){
 
