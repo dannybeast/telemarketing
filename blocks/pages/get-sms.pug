@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -15,8 +16,13 @@ block content
       span.separator /
       a(href="#") Услуги
       span.separator /
-      a(href="#") Привем SMS
-    include ../sections/get-sms-section/get-sms-section
+      a(href="#") Прием SMS
+
+    +service-intro("img/phone-get-sms.png")
+      +e.H1.title Виртуальные номера для приема SMS
+      +e.P.info Услуга, которая позволяет принимать SMS-сообщения на закрепленный за вами номер. Используйте услугу для двустороннего обмена информацией между вами и вашими клиентами, например, для проведения викторин или опроса по качеству работы
+
+
     +advantages("Преимущества")
       ul
         li Бесплатное подключение для ряда номеров

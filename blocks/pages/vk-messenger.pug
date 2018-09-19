@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,11 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") VK Messenger
-    include ../sections/vk-messenger-section/vk-messenger-section
+    
+    +service-intro("img/phone-vk.png")
+      +e.H1.title Сервисные сообщения ВКонтакте
+      +e.P.info Общайтесь со своими клиентами через популярную социальную сеть России, отправляя им <a href="#">сервисные уведомления</a> от лица официальной страницы вашей компании ВКонтакте.
+
     +advantages("Преимущества")
       ul
         li Охват аудитории VK более 97 миллионов посетителей в месяц

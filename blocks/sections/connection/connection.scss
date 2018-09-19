@@ -4,7 +4,7 @@
     color: $black;
     font-weight: 300;
     text-align: center;
-    margin: 107px 0;
+    margin-bottom: 100px;
   }
   &__cards-wrap{
     display: flex;
@@ -22,7 +22,7 @@
 @media only screen and (max-width:992px){
   .connection-section{
     &__title{
-      margin: 50px 0;
+      margin-bottom: 50px;
     }
   }
 }
@@ -37,9 +37,7 @@
 
 @media only screen and (max-width:480px){
   .connection-section{
-    &__title{
-      margin: 60px 0;
-    }
+
     .info-item{
       width: 100%;
     }

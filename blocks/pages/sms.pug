@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
 
 block variables 
   - var pageClass = '';
@@ -16,7 +17,11 @@ block content
       a(href="#") Услуги
       span.separator /
       a(href="#") SMS-рассылка
-    include ../sections/sms-section/sms-section
+
+    +service-intro("img/phone-sms.png")
+      +e.H1.title SMS-рассылка
+      +e.P.info Распространение персонализированных информационных или рекламных сообщений от вашей компании. SMS-информирование широко используется банками и платежными системами, ритейлом, службами доставки еды и заказа такси, а также государственными заказчиками. По статистике, 97,5% получателей открывают сообщение в течение 5 секунд после его получения
+    
     +advantages("Пакет сервисных услуг")
         ul
           li Круглосуточная служба Клиентского Сервиса
