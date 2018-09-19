@@ -5,24 +5,39 @@
   border: none;
   display: inline-block;
   background: transparent;
-  font-size: 1.25rem;
-  color:$black;
-  text-transform: uppercase;
-  padding: 12px 20px;
+  color:$white;
   text-decoration: none;
-  line-height: 1.06;
   text-align: center;
-  letter-spacing: 2.3px;
   font-family: $main-font;
-  font-weight: bold;
+  font-weight: 100;
+  background: $warm-blue;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 3px;
   transition: all .3s ease;
+  &:hover{
+    background: $black;
+  }
   // модификатор
   &--disabled{
     pointer-events: none;
     opacity: 0.5;
   }
+  &--line{
+    background: transparent;
+    border:solid 2px $warm-blue;
+    color:$warm-blue;
+    font-weight: 400;
+    transition: none;
+    &:hover{
+      background: $warm-blue;
+      color:#fff;
+    }
+  }
+
 
 }
+
 
 .btn-link{
   font-size: 20px;

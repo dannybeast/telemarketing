@@ -1,0 +1,5 @@
+mixin input(title, inputClass, blockClass)
+  +b.LABEL.input-block(class=blockClass)
+    +e.SPAN.name #{title}
+    input(type="text", class=inputClass)
+    

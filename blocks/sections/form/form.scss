@@ -1,4 +1,9 @@
 .form-section{
+  padding-bottom: 130px;
+  padding-top: 10px;
+  .form-block{
+    display: none;
+  }
   &__title{
     text-align: center;
     font-size: 39.5px;
@@ -16,10 +21,21 @@
   &__inputs{
     display: flex;
     flex-wrap: wrap;
-    margin: -5px -3.5px;
-    .form{
-      width: calc(33% - 7px);
-      margin: 5px 3.5px;
+    margin: -5px -4px 20px -4px;
+    .input-block{
+      width: calc(33% - 8px);
+      margin: 5px 4px;
+    }
+  }
+  &__buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn{
+      margin-bottom: 20px;
+      font-size: 21px;
     }
   }
 }
@@ -27,8 +43,8 @@
 @media only screen and (max-width:992px){
   .form-section{
     &__inputs{
-      .form{
-        width: calc(50% - 7px);
+      .input-block{
+        width: calc(50% - 8px);
       }
     }
   }
@@ -37,7 +53,7 @@
 @media only screen and (max-width:767px){
   .form-section{
     &__inputs{
-      .form{
+      .input-block{
         width: 100%;
       }
     }
