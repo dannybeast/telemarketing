@@ -1,0 +1,29 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/header-intro/header-intro
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "О компании";
+  - var pageDescription = ""
+  - var pageName = ""
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Компания
+      span.separator /
+      a(href="#") О компании
+    +header-intro("Компания", "Эксперт в организации персонализированных коммуникаций", "photo", "img/company.jpg")
+    
+    +b.DIV.details__info
+      .container
+        p Devino Telecom – признанный отраслевой эксперт в обеспечении персонализированных коммуникаций с клиентами. Компания работает на рынке SMS-коммуникаций с 2005 года. По результатам исследования Advanced Communication & Media, Devino Telecom признана лидером среди поставщиков SMS-информирования в сегменте Retail.
+        img(src="img/company2.jpg", alt="")
+        p Компания имеет прямые подключения к операторам сотовой связи и обеспечивает моментальную <a href="#">отправку сообщений</a> за счет высокой пропускной способности канала и передового высокотехнологичного оборудования. 
+        p Возможности инфраструктуры Devino Telecom по скорости и надежности приближаются к мощностями операторов «Большой тройки». Это стало возможным благодаря использованию сетевого оборудования Cisco и Brocade, серверов и систем хранения данных от мировых лидеров IBM и HP, а также ряда собственных разработок с использованием стека технологий Microsoft.NET и Java. 
+        p Производительность платформы Devino Telecom превышает 6000 сообщений в секунду, а при использовании транзакционного канала скорость доставки сообщения до абонента составляет менее 1 секунды.
+        p Devino Telecom имеет статус  <a href="#">«Золотого партнера Билайн»</a>. Среди  <a href="#">клиентов</a> компании крупнейшие сети розничной торговли, а также структуры госсектора и банки. 
+        p(style="font-size:15px") *Ознакомиться с исследованием Advanced Communications & Media: <span style="color:#f26c4f">A2P SMS Market in Russia: current trends and outlook for 2015-2017</span>
