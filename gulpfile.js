@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	  path = require('path'),
 		pug = require('gulp-pug'),
 		sass = require('gulp-sass'),
+		mmq = require('gulp-merge-media-queries'),
 		concat = require('gulp-concat'),
 		plumber = require('gulp-plumber'),
 		prefix = require('gulp-autoprefixer'),
@@ -48,6 +49,7 @@ gulp.task('sass', function() {
 			browsers: ['last 10 versions'],
 			cascade: true
 		}))
+		.pipe(mmq())
 		.pipe(gulp.dest(paths.devDir + 'css/'))
 		.pipe(browserSync.stream());
 });

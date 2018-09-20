@@ -66,6 +66,12 @@
 
 @media only screen and (max-width:992px){
   .header-intro{
+    > .container{
+      &:before{
+        width: 100%;
+        height: calc(100% - 150px);
+      }
+    }
     &__title{
       font-size: 32px;
     line-height: 1.1;
@@ -93,5 +99,14 @@
       }
     }
 
+  }
+}
+
+
+@media only screen and (max-width:767px){
+  .header-intro{
+    &__description{
+      font-size: 24px;
+    }
   }
 }
