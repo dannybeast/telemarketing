@@ -1,0 +1,13 @@
+mixin left-intro-item(itemChoose, itemSrc)
+  +b.left-intro-item
+    +e.row
+      +e.left
+        if itemChoose == "photo"
+          +e.photo
+            img(src=itemSrc, alt="")
+        else if itemChoose == "video"
+          +e.video
+            iframe(src=itemSrc, frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+      +e.right
+        if block
+          block
