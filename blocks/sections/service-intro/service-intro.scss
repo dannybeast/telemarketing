@@ -4,6 +4,31 @@
   &--pb{
     padding-bottom: 100px;
   }
+  &--service{
+    border: none;
+    padding-top: 0;
+  }
+  &--service .service-intro{
+    &__title{
+      font-size: 19.5px;
+      font-weight: normal;
+    }
+    &__info{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: normal;
+    }
+    &__right{
+      width: 522px;
+    }
+  }
+  &--left .service-intro{
+    &__row{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  
   &__row{
      display: flex;
      align-items: center;
@@ -35,6 +60,11 @@
 
 @media only screen and (max-width:992px){
   .service-intro{
+   &--service .service-intro{
+     &__right{
+      width: 45%;
+     }
+   }
    padding-top: 50px;
    &--pb{
     padding-bottom: 0;
@@ -52,8 +82,18 @@
 
 @media only screen and (max-width:767px){
   .service-intro{
+    &--service .service-intro{
+      &__right{
+       width: 100%;
+      }
+    }
     &--pb{
       padding-bottom: 50px;
+    }
+    &--left .service-intro{
+      &__row{
+        flex-direction: column;
+      }
     }
     &__row{
       flex-direction: column;
