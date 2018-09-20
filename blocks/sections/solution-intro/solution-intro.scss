@@ -4,7 +4,7 @@
   height: 530px;
   display: flex;
   align-items: center;
-  &--inbread{
+  &--breadcrumbs{
     margin-top: -63px;
   }
   &__left{
@@ -15,6 +15,14 @@
     line-height: 1.2;
     font-weight: bold;
     max-width: 590px;
+    span{
+      font-weight: 300;
+    }
+  }
+  &__description{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
   }
   &__image{
     position: absolute;
@@ -72,14 +80,13 @@
     .container{
       flex-wrap: wrap;
     }
-    &__title{
-      margin-bottom: 30px;
-    }
+    
     &__left{
       width: 100%;
     }
     &__image{
       width: 100%;
+      margin-top: 30px;
     }
   }
 }

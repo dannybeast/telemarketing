@@ -2716,7 +2716,7 @@ footer {
 	align-items: center;
 }
 
-.solution-intro--inbread {
+.solution-intro--breadcrumbs {
 	margin-top: -63px;
 }
 
@@ -2729,6 +2729,16 @@ footer {
 	line-height: 1.2;
 	font-weight: bold;
 	max-width: 590px;
+}
+
+.solution-intro__title span {
+	font-weight: 300;
+}
+
+.solution-intro__description {
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 .solution-intro__image {
@@ -7017,16 +7027,13 @@ footer {
 	flex-wrap: wrap;
 }
 
-.solution-intro__title {
-	margin-bottom: 30px;
-}
-
 .solution-intro__left {
 	width: 100%;
 }
 
 .solution-intro__image {
 	width: 100%;
+	margin-top: 30px;
 }
 
 .adventages-section {

@@ -1,7 +1,9 @@
-mixin solution-intro(sectionTitle, sectionClass, sectionImg)
+mixin solution-intro(sectionClass, sectionImg)
   +b.SECTION.solution-intro(class=sectionClass)
     .container
       +e.left
-        +e.H1.title #{sectionTitle}
+        if block
+          block
+
       +e.image
         img(src=sectionImg, alt="")
