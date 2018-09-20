@@ -3,6 +3,7 @@ include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
 include ../sections/service-intro/service-intro
 include ../sections/solution-intro/solution-intro
+include ../sections/form/form
 
 
 block variables 
@@ -46,4 +47,6 @@ block content
       +e.P.info Услуга по проверке статуса мобильного номера абонента: активен, не обслуживается, в роуминге или домашней сети. Сервис незаметен для абонента, так как запрос отправляется к базе данных оператора сотовой связи, обслуживающего данный телефонный номер. Услуга позволяет актуализировать клиентскую базу
  
     include ../sections/telemarketing-online-usage/telemarketing-online-usage
-    include ../sections/form/form
+    +form-section("Оставить заявку")
+      +e.H2.title Начните сегодня
+      +e.P.info Клиентам Telemarketing4you доступен юридический и маркетинговый консалтинг. Специалисты компании разработают коммуникационную стратегию для достижения конкретных целей

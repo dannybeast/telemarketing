@@ -2854,6 +2854,8 @@ footer {
 	text-align: center;
 	color: #303030;
 	font-size: 20px;
+	line-height: 29px;
+	max-width: 704px;
 	font-weight: 300;
 	margin-bottom: 60px;
 }

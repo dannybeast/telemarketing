@@ -1,19 +1,21 @@
 include ../../ui/input/input
-+b.SECTION.form-section
-  .container
-    +e.H2.title Начните сегодня
-    +e.P.info Подключение бесплатное, услуги оказываются cписанием со счета
-    .form-block
-      form
-        +e.inputs
-          +input("Имя", "", "--error")
-          +input("Фамилия")
-          +input("Телефон", "js-phone-mask")
-          +input("E-mail")
-          +input("Компания")
-          +input("Должность")
-        +b.A(href="#", class="btn") Отправить
+mixin form-section(btnName, linkName)
+  +b.SECTION.form-section
+    .container
+      if block
+        block
+      .form-block
+        form
+          +e.inputs
+            +input("Имя", "", "--error")
+            +input("Фамилия")
+            +input("Телефон", "js-phone-mask")
+            +input("E-mail")
+            +input("Компания")
+            +input("Должность")
+          +b.A(href="#", class="btn") Отправить
 
-    +e.buttons
-      +b.BUTTON(class="js-btn-show btn --line") Начать
-      a(href="#") Личный кабинет
+      +e.buttons
+        +b.BUTTON(class="js-btn-show btn --line") #{btnName}
+        if linkName
+          a(href="#") #{linkName}
