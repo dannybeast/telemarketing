@@ -1,0 +1,40 @@
+.left-intro-item{
+  &__row{
+    display: flex;
+  }
+  &__left{
+
+  }
+  &__right{
+    position: relative;
+  }
+  &__title{
+    font-size: 19.5px;
+  }
+  &__description{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .left-intro-item__link{
+    color: $azul;
+    position: absolute;
+    padding-right: 33px;
+    bottom: 25px;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 19px;
+      height: 11px;
+      background: url('../img/icons/line-arrow.svg');
+      right: 0;
+      top: calc(50% - 5px);
+    }
+    &:hover{
+      color: $black-six;
+      &:after{
+        background: url('../img/icons/line-arrow-black.svg');
+      }
+    }
+  }
+}

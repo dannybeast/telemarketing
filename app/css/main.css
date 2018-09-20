@@ -1979,6 +1979,56 @@ footer {
 	font-weight: 300;
 	color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+.left-intro-item__row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.left-intro-item__right {
+	position: relative;
+}
+
+.left-intro-item__title {
+	font-size: 19.5px;
+}
+
+.left-intro-item__description {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.left-intro-item .left-intro-item__link {
+	color: #1838e0;
+	position: absolute;
+	padding-right: 33px;
+	bottom: 25px;
+}
+
+.left-intro-item .left-intro-item__link:after {
+	content: '';
+	position: absolute;
+	width: 19px;
+	height: 11px;
+	background: url("../img/icons/line-arrow.svg");
+	right: 0;
+	top: -webkit-calc(50% - 5px);
+	top: calc(50% - 5px);
+}
+
+.left-intro-item .left-intro-item__link:hover {
+	color: #212121;
+}
+
+.left-intro-item .left-intro-item__link:hover:after {
+	background: url("../img/icons/line-arrow-black.svg");
+}
+>>>>>>> 1d0a4428764c85c12f2ae71960e5fcb4466014b5
 
 .intro {
 	font-weight: 300;
@@ -2782,6 +2832,7 @@ footer {
 	font-size: 21px;
 }
 
+<<<<<<< HEAD
 .text {
 	font-size: 15px;
 	font-weight: 300;
@@ -2806,6 +2857,8 @@ footer {
 	line-height: 1.5;
 }
 
+=======
+>>>>>>> 1d0a4428764c85c12f2ae71960e5fcb4466014b5
 .events__title {
 	font-size: 31px;
 	font-weight: 300;
@@ -6811,10 +6864,13 @@ footer {
 	width: 100%;
 }
 
+<<<<<<< HEAD
 .text--padding {
 	padding-bottom: 50px;
 }
 
+=======
+>>>>>>> 1d0a4428764c85c12f2ae71960e5fcb4466014b5
 .events .event__title {
 	font-size: 31px;
 }
