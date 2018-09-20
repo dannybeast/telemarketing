@@ -16,6 +16,6 @@ mixin form-section(btnName, linkName)
           +b.A(href="#", class="btn") Отправить
 
       +e.buttons
-        +b.BUTTON(class="js-btn-show btn --line") #{btnName}
+        +b.BUTTON(class="js-btn-show btn --line", attr=btnName) #{btnName}
         if linkName
           a(href="#") #{linkName}

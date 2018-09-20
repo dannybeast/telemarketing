@@ -2,6 +2,7 @@ extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/advantages/advantages
 include ../sections/service-intro/service-intro
+include ../sections/form/form
 
 block variables 
   - var pageClass = '';
@@ -32,4 +33,6 @@ block content
         li Возможность настройки защиты от смены сим-карты.
         li Высокая скорость доставки одноразовых паролей по смс. Мы используем собственную платформу для отправки смс-сообщений непосредственно в сети операторов, что гарантирует высокую скорость доставки.
     include ../sections/connection/connection
-    include ../sections/form/form
+    +form-section("Начать", "Личный кабинет")
+      +e.H2.title Начните сегодня
+      +e.P.info Подключение бесплатное, услуги оказываются cписанием со счета
