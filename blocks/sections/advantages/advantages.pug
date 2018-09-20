@@ -1,7 +1,7 @@
-mixin advantages(title)
+mixin advantages(title, titleClass)
   +b.SECTION.adventages-section
     .container
-      +e.H2.title #{title}
+      +e.H2.title(class=titleClass) #{title}
       +e.list
         if block
           block

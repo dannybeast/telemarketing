@@ -1,40 +1,84 @@
 .left-intro-item{
   &__row{
     display: flex;
+    align-items: center;
+  }
+  &__right{
+    width: 50%;
   }
   &__left{
-
+    width: 50%;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 9999px;
+      height: calc(100% + 100px);
+      bottom: -50px;
+      right: 100px;
+      background: url('../img/dots.png');
+      z-index: -1;
+    }
+    img{
+      max-width: 100%;
+      display: block;
+    }
   }
   &__right{
     position: relative;
+    padding: 0 30px 0 60px;
   }
   &__title{
     font-size: 19.5px;
+    margin-bottom: 30px;
   }
   &__description{
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
+    margin-bottom: 50px;
   }
-  .left-intro-item__link{
-    color: $azul;
-    position: absolute;
-    padding-right: 33px;
-    bottom: 25px;
-    &:after{
-      content: '';
-      position: absolute;
-      width: 19px;
-      height: 11px;
-      background: url('../img/icons/line-arrow.svg');
-      right: 0;
-      top: calc(50% - 5px);
+}
+
+
+
+@media only screen and (max-width:992px){
+
+  .left-intro-item{
+    &__row{
+      flex-wrap: wrap;
     }
-    &:hover{
-      color: $black-six;
-      &:after{
-        background: url('../img/icons/line-arrow-black.svg');
+    &__left{
+      width: 100%;
+      margin-bottom: 50px;
+      &:before{
+        width: 100%;
+        height: calc(100% - 100px);
+        right: 0;
+        bottom: 50px;
       }
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    &__right{
+      width: 100%;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      
+    }
+  }
+
+}
+
+@media only screen and (max-width:767px){
+
+  .left-intro-item{
+    &__description{
+      font-size: 16px;
+      line-height: 1.5;
     }
   }
 }

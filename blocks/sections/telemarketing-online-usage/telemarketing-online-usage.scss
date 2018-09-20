@@ -1,0 +1,20 @@
+.telemarketing-online-usage{
+  margin-bottom: 80px;
+  &__title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+}
+
+
+@media only screen and (max-width:767px){
+
+  .telemarketing-online-usage{
+    &__title{
+      font-size: 31.5px;
+      margin-bottom: 30px;
+    }
+  }
+}

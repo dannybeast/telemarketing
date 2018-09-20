@@ -4,10 +4,14 @@
   &--pb{
     padding-bottom: 100px;
   }
+  &--pb60{
+    padding-bottom: 60px;
+  }
   &--service{
     border: none;
     padding-top: 0;
   }
+
   &--service .service-intro{
     &__title{
       font-size: 19.5px;
@@ -16,12 +20,12 @@
     &__info{
       font-size: 16px;
       line-height: 24px;
-      font-weight: normal;
     }
     &__right{
       width: 522px;
     }
   }
+
   &--left .service-intro{
     &__row{
       display: flex;
@@ -82,9 +86,21 @@
 
 @media only screen and (max-width:767px){
   .service-intro{
+    &--service{
+      padding-top: 0;
+    }
     &--service .service-intro{
       &__right{
        width: 100%;
+       margin-top: 0;
+       margin-bottom: 30px;
+       order:1;
+      }
+      &__left{
+        order:2;
+      }
+      &__title{
+        margin-bottom: 20px;
       }
     }
     &--pb{
@@ -102,6 +118,7 @@
       margin-top: 0;
       padding: 0;
       width: 100%;
+  
     }
     &__title{
       font-size: 31.5px;
@@ -110,6 +127,7 @@
     &__right{
       margin-top: 50px;
       width: 100%;
+  
     }
     &__right-wrap{
       width: 320px;

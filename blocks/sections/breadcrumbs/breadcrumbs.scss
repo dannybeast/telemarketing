@@ -1,4 +1,6 @@
 .breadcrumbs{
+  position: relative;
+  z-index: 2;
   &__links{
     padding-top: 25px;
     padding-bottom: 10px; 
