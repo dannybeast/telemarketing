@@ -10,8 +10,6 @@
     left: 0;
     right: 0;
     z-index: 15;
-
-
     &__right{
         display: flex;
         align-items: center;
@@ -163,7 +161,15 @@
     .header{
         padding-left: 15px;
         padding-right: 15px;
-        
+        &__logo{
+            background: url('../img/logo/logo-min.svg') center no-repeat;
+            width: 55px;
+            height: 26px;
+            margin-right: 0;
+            img{
+                display: none;
+            }
+        }
         &__right{
             margin-right: -15px;
         }

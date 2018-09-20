@@ -1,7 +1,5 @@
 .events{
-  .container{
-    border-bottom: 1px solid $white-six;
-  }
+
   &__title{
     font-size: 31px;
     font-weight: 300;
@@ -9,9 +7,10 @@
   }
   .event{
     padding: 78px 0;
+    border-bottom: 1px solid $white-six;
     &__title{
       font-size: 50px;
-      line-height: 61px;
+      line-height: 1.3;
       font-weight: 300;
       margin-bottom: 74px;
     }
@@ -26,4 +25,20 @@
       font-weight: 300;
     }
   }
+}
+
+
+@media only screen and (max-width:767px){
+
+  .events{
+    .event{
+      &__title{
+        font-size: 31px;
+      }
+      &__date{
+        font-size: 24px;
+      }
+    }
+  }
+
 }

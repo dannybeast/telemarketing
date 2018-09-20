@@ -1,0 +1,19 @@
+mixin header-intro(itemTitle, itemDesc, itemChoose, itemSrc)
+  +b.SECTION.header-intro
+    .container
+      +e.row
+        +e.left
+          +e.H1.title #{itemTitle}
+          if itemDesc
+            +e.P.description #{itemDesc}
+        +e.right
+
+          if itemChoose == "photo"
+            +e.photo
+              img(src=itemSrc, alt="")
+          else if itemChoose == "video"
+            +e.video
+              iframe(src=itemSrc, frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+      
+      if block
+        block
