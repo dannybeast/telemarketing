@@ -2,17 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  transition: all .3s ease;
   &:hover{
-    background: $pale-grey;
-    transition: all .3s ease;
     .link-item__link-name{
       color: $black;
-    }
-    .link-item__bottom{
-      
-      transform: translateX(20px);
-      transition: all .3s ease;
     }
   }
   &__top{
