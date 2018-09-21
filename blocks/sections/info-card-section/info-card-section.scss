@@ -1,0 +1,40 @@
+.info-card-section{
+  margin-top: 80px;
+  margin-bottom: 161px;
+  &__title{
+    font-size: 41.5px;
+    font-weight: 300;
+    color: $black;
+    margin-bottom: 65px;
+  }
+  .left-intro-item{
+    margin-bottom: 53px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .info-card-section{
+    .left-intro-item{
+      &__description{
+        display: none;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .info-card-section{
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .info-card-section{
+    &__title{
+      font-size: 31.5px;
+    }
+  }
+}

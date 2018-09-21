@@ -3083,19 +3083,19 @@ footer {
 	line-height: 1.5;
 }
 
-.devino-life-section {
+.info-card-section {
 	margin-top: 80px;
 	margin-bottom: 161px;
 }
 
-.devino-life-section__title {
+.info-card-section__title {
 	font-size: 41.5px;
 	font-weight: 300;
 	color: #000000;
 	margin-bottom: 65px;
 }
 
-.devino-life-section .left-intro-item {
+.info-card-section .left-intro-item {
 	margin-bottom: 53px;
 }
 
@@ -6783,6 +6783,16 @@ footer {
 
 }
 
+@media only screen and (max-width: 1024px) {
+
+.info-card-section .left-intro-item__description {
+	display: none;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+}
+
 @media only screen and (max-width: 992px) {
 
 .footer {
@@ -6893,7 +6903,7 @@ footer {
 }
 
 .details__title {
-	font-size: 32px;
+	font-size: 31.5px;
 	line-height: 1.1;
 }
 
@@ -7039,6 +7049,11 @@ footer {
 	width: calc(50% - 8px);
 }
 
+.info-card-section {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
 .past-events__row .card-wrap {
 	width: -webkit-calc(50% - 35px);
 	width: calc(50% - 35px);
@@ -7046,6 +7061,14 @@ footer {
 
 .expert-section__row .picture-item {
 	width: 50%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.info-card-section__title {
+	font-size: 31.5px;
 }
 
 }

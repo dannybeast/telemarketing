@@ -1,0 +1,8 @@
+include ../../items/left-intro-item/left-intro-item
+mixin info-card-section(sectionTitle)
+  +b.SECTION.info-card-section
+    .container
+      +e.H2.title #{sectionTitle}
+      if block
+        block
+      
