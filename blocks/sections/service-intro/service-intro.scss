@@ -7,6 +7,9 @@
   &--pb60{
     padding-bottom: 60px;
   }
+  &--pb180{
+    padding-bottom: 180px;
+  }
   &--service{
     border: none;
     padding-top: 0;
@@ -73,6 +76,9 @@
    &--pb{
     padding-bottom: 0;
   }
+  &--pb180{
+    padding-bottom: 0px;
+  }
    &__left{
      width: 55%;
      padding-bottom: 50px;
@@ -104,6 +110,9 @@
       }
     }
     &--pb{
+      padding-bottom: 50px;
+    }
+    &--pb180{
       padding-bottom: 50px;
     }
     &--left .service-intro{

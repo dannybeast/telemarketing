@@ -2544,6 +2544,10 @@ footer {
 	padding-bottom: 60px;
 }
 
+.service-intro--pb180 {
+	padding-bottom: 180px;
+}
+
 .service-intro--service {
 	border: none;
 	padding-top: 0;
@@ -2855,7 +2859,7 @@ footer {
 	color: #303030;
 	font-size: 20px;
 	font-weight: 300;
-	margin-bottom: 60px;
+	margin: 0 auto 60px;
 }
 
 .form-section__inputs {
@@ -6746,6 +6750,10 @@ footer {
 	padding-bottom: 0;
 }
 
+.service-intro--pb180 {
+	padding-bottom: 0px;
+}
+
 .service-intro__left {
 	width: 55%;
 	padding-bottom: 50px;
@@ -6965,6 +6973,10 @@ footer {
 }
 
 .service-intro--pb {
+	padding-bottom: 50px;
+}
+
+.service-intro--pb180 {
 	padding-bottom: 50px;
 }
 

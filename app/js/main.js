@@ -53,12 +53,14 @@ $(document).ready(function(){
      });
 
   // show-hide form
-  $('.js-btn-show').click(function(){
 
+  $('.js-btn-show').click(function(){
+    var btn_text_attr = $('.js-btn-show').attr("attr");
+    console.log(btn_text_attr);
     $('.form-section .form-block').slideToggle();
     var btn_text = $('.js-btn-show').text();
     $(this).text(
-      btn_text == "Закрыть форму" ? "Начать" : "Закрыть форму");
+      btn_text == "Закрыть форму" ? btn_text_attr : "Закрыть форму");
 
   });
 
