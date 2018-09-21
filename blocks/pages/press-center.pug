@@ -1,0 +1,40 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/knowing-base/knowing-base
+include ../items/link-item/link-item
+include ../items/left-bar-item/left-bar-item
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Телемаркетинг Онлайн";
+  - var pageDescription = ""
+  - var pageName = "telemarketing-online"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Компания
+      span.separator /
+      a(href="#") Пресс-центр
+    +knowing-base("Пресс-центр")
+      +left-bar-item
+        +e.left
+          ul
+            li(class="active")
+              a(href="#") Все
+            li
+              a(href="#") Пресс-релизы
+            li
+              a(href="#") СМИ о нас
+        +e.right
+          +link-item("#","photo","img/press1.jpg")
+            +e.title Пресс-релизы
+            +e.link-name Devino Telecom обеспечит аутентификацию для уличного WI-FI в городе Реутов
+          +link-item("#","photo","img/press2.jpg")
+            +e.title Пресс-релизы
+            +e.link-name Состоялась онлайн-конференция по мобильной рекламе
+          +link-item("#","photo","img/articles3.jpg")
+            +e.title СМИ о нас
+            +e.link-name Тернистый путь к клиентской лояльности

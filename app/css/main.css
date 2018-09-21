@@ -2171,7 +2171,8 @@ footer {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: -17px;
-	width: 100%;
+	width: -webkit-calc(100% + 34px);
+	width: calc(100% + 34px);
 	margin-bottom: auto;
 }
 
@@ -6824,6 +6825,10 @@ footer {
 	padding: 0;
 	max-width: 600px;
 	margin: 0 auto;
+}
+
+.link-item__bottom {
+	padding-bottom: 50px;
 }
 
 .left-bar-item {

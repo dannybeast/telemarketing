@@ -40,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: -17px;
-    width: 100%;
+    width: calc(100% + 34px);
     margin-bottom: auto;
     .link-item{
       width: calc(50% - 34px);
