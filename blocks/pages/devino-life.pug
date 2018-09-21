@@ -1,0 +1,22 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Телемаркетинг Онлайн";
+  - var pageDescription = ""
+  - var pageName = "telemarketing-online"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") Решения
+      span.separator /
+      a(href="#") Telemarketing Online
+
+    include ../sections/devino-life-section/devino-life-section
+    
+      

@@ -1,5 +1,5 @@
-mixin left-intro-item(itemChoose, itemSrc)
-  +b.left-intro-item
+mixin left-intro-item(itemChoose, itemSrc, itemClass)
+  +b.left-intro-item(class=itemClass)
     +e.row
       +e.left
         if itemChoose == "photo"
