@@ -1,0 +1,43 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/knowing-base/knowing-base
+include ../items/link-item/link-item
+include ../items/left-bar-item/left-bar-item
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Телемаркетинг Онлайн";
+  - var pageDescription = ""
+  - var pageName = "telemarketing-online"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") База знаний
+      span.separator /
+      a(href="#") Статьи
+    +knowing-base("Статьи")
+      +left-bar-item
+        +e.left
+          ul
+            li(class="active")
+              a(href="#") Все
+            li
+              a(href="#") Мобильный маркетинг
+            li
+              a(href="#") Бизнес-модели
+            li
+              a(href="#") Юридические аспекты
+        +e.right
+          +link-item("#","photo","img/articles1.jpg")
+            +e.title Юридические аспекты
+            +e.link-name Борьба с SMS-спамом: опыт США и Великобритании
+          +link-item("#","photo","img/articles2.jpg")
+            +e.title Мобильный маркетинг
+            +e.link-name Сбор согласий для Email и SMS-кампаний в социальных сетях
+          +link-item("#","photo","img/articles3.jpg")
+            +e.title Бизнес модели
+            +e.link-name Тернистый путь к клиентской лояльности
+

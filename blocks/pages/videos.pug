@@ -1,0 +1,38 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/knowing-base/knowing-base
+include ../items/link-item/link-item
+include ../items/left-bar-item/left-bar-item
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Телемаркетинг Онлайн";
+  - var pageDescription = ""
+  - var pageName = "telemarketing-online"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="#") Главная
+      span.separator /
+      a(href="#") База знаний
+      span.separator /
+      a(href="#") Видеозаписи
+    +knowing-base("Видеозаписи")
+      +left-bar-item
+        +e.left
+          ul
+            li(class="active")
+              a(href="#") Все
+            li
+              a(href="online-conf.html") Онлайн-конференции
+            li
+              a(href="#") Семинары
+        +e.right
+          +link-item("#","photo","img/video.jpg")
+            +e.title Онлайн-конференции
+            +e.link-name Онлайн-семинар «Viber <br> для бизнеса»
+          +link-item("#","photo","img/video.jpg")
+            +e.title Семинары
+            +e.link-name Семинар: «Рассылка SMS: как не получить штраф и заработать лояльность клиента?»
+

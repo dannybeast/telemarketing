@@ -2034,6 +2034,169 @@ footer {
 	margin-bottom: 50px;
 }
 
+.link-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.link-item:hover {
+	background: #fafafb;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.link-item:hover .link-item__link-name {
+	color: #000000;
+}
+
+.link-item:hover .link-item__bottom {
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(20px);
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.link-item__top {
+	width: 100%;
+	margin-bottom: 26px;
+}
+
+.link-item__top img {
+	width: 100%;
+}
+
+.link-item__video {
+	margin-bottom: 26px;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.link-item__video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.link-item__bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-bottom: 100px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.link-item__title {
+	font-size: 14px;
+	color: #929292;
+	margin-bottom: 17px;
+}
+
+.link-item__link-name {
+	font-size: 20px;
+	line-height: 25px;
+	color: #1838e0;
+	font-weight: 300;
+	max-width: 80%;
+}
+
+.left-bar-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.left-bar-item__left {
+	min-width: 294px;
+	max-width: 294px;
+}
+
+.left-bar-item__left ul li {
+	min-height: 58px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.left-bar-item__left ul li.active {
+	border-left: 2px solid #1838e0;
+}
+
+.left-bar-item__left ul li.active a {
+	color: #1838e0;
+}
+
+.left-bar-item__left ul li:hover {
+	background: #fafafb;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.left-bar-item__left ul li:hover a {
+	color: #000000;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.left-bar-item__left ul li a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 300;
+	color: #929292;
+	width: 100%;
+	height: 58px;
+	padding-left: 17px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.left-bar-item__right {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: -17px;
+	width: 100%;
+	margin-bottom: auto;
+}
+
+.left-bar-item__right .link-item {
+	width: -webkit-calc(50% - 34px);
+	width: calc(50% - 34px);
+	margin: 17px;
+}
+
 .intro {
 	font-weight: 300;
 }
@@ -2858,6 +3021,8 @@ footer {
 	text-align: center;
 	color: #303030;
 	font-size: 20px;
+	line-height: 29px;
+	max-width: 704px;
 	font-weight: 300;
 	margin: 0 auto 60px;
 }
@@ -3018,6 +3183,18 @@ footer {
 	text-align: center;
 	font-weight: 300;
 	margin-bottom: 80px;
+}
+
+.knowing-base {
+	margin-top: 86px;
+	margin-bottom: 220px;
+}
+
+.knowing-base__title {
+	font-size: 41.5px;
+	font-weight: 300;
+	color: #000000;
+	margin-bottom: 61px;
 }
 
 @media (min-width: 576px) {
@@ -6665,6 +6842,22 @@ footer {
 	margin: 0 auto;
 }
 
+.left-bar-item {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.left-bar-item__left {
+	max-width: none;
+}
+
+.left-bar-item__right {
+	margin-top: 40px;
+}
+
 .partners__list {
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
@@ -7127,6 +7320,28 @@ footer {
 .telemarketing-online-usage__title {
 	font-size: 31.5px;
 	margin-bottom: 30px;
+}
+
+}
+
+@media only screen and (max-width: 762px) {
+
+.left-bar-item__right {
+	margin-top: 20px;
+}
+
+.left-bar-item__right .link-item {
+	width: 100%;
+}
+
+.knowing-base {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.knowing-base__title {
+	font-size: 31.5px;
+	margin-bottom: 40px;
 }
 
 }

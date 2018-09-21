@@ -1,0 +1,14 @@
+mixin link-item(itemLink, itemChoose, itemSrc)
+  +b.A.link-item(href=itemLink)
+    if itemChoose == "photo"
+      +e.top
+        img(src=itemSrc)
+      +e.bottom
+        if block
+          block
+    else if itemChoose == "video"
+      +e.video
+          iframe(width='100%', src=itemSrc, frameborder="0", allow="autoplay; encrypted-media", allowfullscreen='')
+      +e.bottom
+        if block
+          block
