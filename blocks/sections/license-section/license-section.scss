@@ -5,11 +5,31 @@
       max-width: 305px;
     }
     &__right{
-      justify-content: center;
+      .container{
+        display: flex;
+        justify-content: center;
+      }
       img{
         margin-bottom: 40px;
+        //width: 100%;
         &:last-child{
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .license-section{
+    .articles{
+      &__right{
+        margin-top: 40px;
+        .container{
+          display: block;
+        }
+        img{
+          width: 100%;
         }
       }
     }
