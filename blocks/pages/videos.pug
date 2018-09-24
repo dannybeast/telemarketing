@@ -2,13 +2,13 @@ extends ../layout/layout
 include ../sections/breadcrumbs/breadcrumbs
 include ../sections/knowing-base/knowing-base
 include ../items/link-item/link-item
-include ../items/left-bar-item/left-bar-item
+include ../items/articles/articles
 
 block variables 
   - var pageClass = '';
-  - var pageTitle = "Телемаркетинг Онлайн";
+  - var pageTitle = "Видеозаписи";
   - var pageDescription = ""
-  - var pageName = "telemarketing-online"
+  - var pageName = "videos"
 
 block content
   +b.MAIN(role='main')
@@ -19,7 +19,7 @@ block content
       span.separator /
       a(href="#") Видеозаписи
     +knowing-base("Видеозаписи")
-      +left-bar-item
+      +articles
         +e.left
           ul
             li(class="active")

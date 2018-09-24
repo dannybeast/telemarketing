@@ -1,4 +1,4 @@
-.left-bar-item{
+.articles{
   display: flex;
   &__left{
     min-width: 294px;
@@ -52,7 +52,7 @@
 }
 
 @media only screen and (max-width: 992px){
-  .left-bar-item{
+  .articles{
     flex-direction: column;
     &__left{
       
@@ -65,7 +65,7 @@
 }
 
 @media only screen and (max-width: 762px){
-  .left-bar-item{
+  .articles{
     &__right{
       margin-top: 20px;
       .link-item{
