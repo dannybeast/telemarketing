@@ -1,0 +1,23 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Вакансии";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "vacancy"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="index.html") Главная 
+      span.separator /
+      a(href="#") Компания
+      span.separator /
+      a(href="#") Вакансии
+
+    include ../sections/vacancy-section/vacancy-section
+    
+
+    

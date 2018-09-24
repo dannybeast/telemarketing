@@ -1,0 +1,44 @@
+.table-item{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid $white-six;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &:last-child{
+    border-bottom: none;
+  }
+  &__left{
+    width: 20%;
+    min-width: 200px;
+  }
+  &__title{
+    font-size: 31px;
+    font-weight: 300;
+  }
+  &__right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    .text-item{
+      //margin-bottom: 120px;
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .table-item{
+    flex-direction: column;
+    &__right{
+      width: 100%;
+      .text-item{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        &__text-wrap{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

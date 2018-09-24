@@ -1,0 +1,28 @@
+.vacancy-section{
+  margin-bottom: 80px;
+  &__title{
+    font-size: 41.5px;
+    font-weight: 300;
+    color: $black;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .vacancy-section{
+    margin-bottom: 20px;
+    .table-item{
+      padding-top: 30px;
+      padding-bottom: 20px;
+      &__title{
+        font-size: 25px;
+      }
+    }
+    &__title{
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-size: 31.5px;
+    }
+  }
+}

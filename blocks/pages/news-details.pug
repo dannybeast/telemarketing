@@ -1,0 +1,21 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/knowing-base/knowing-base
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Telemarketing присоединилась к GSMA";
+  - var pageDescription = ""
+  - var pageName = "news-details"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="index.html") Главная
+      span.separator /
+      a(href="#") Компания
+      span.separator /
+      a(href="#") Новости
+      span.separator /
+      a(href="#") Devino Telecom присоединилась к GSMA
+    include ../sections/news-details-section/news-details-section

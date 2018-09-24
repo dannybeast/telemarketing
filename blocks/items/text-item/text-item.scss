@@ -1,0 +1,33 @@
+.text-item{
+  &__text-wrap{
+    padding-right: 20px;
+  }
+  &__date{
+    font-size: 14px;
+    color: $warm-grey-five;
+  }
+  &--mb{
+    margin-bottom: 120px;
+  }
+  &__title{
+    display: block;
+    max-width: 360px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    color: $azul;
+  }
+  .text-item__title{
+    &:hover{
+      color: $black;
+    }
+  }
+  &__info{
+    display: block;
+    max-width: 375px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: $black;
+  }
+}

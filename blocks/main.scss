@@ -27,6 +27,8 @@
 @import "items/left-intro-item/left-intro-item";
 @import "items/link-item/link-item";
 @import "items/articles/articles";
+@import "items/text-item/text-item";
+@import "items/table-item/table-item";
 
 // sections
 @import "sections/intro/intro"; 
@@ -52,6 +54,10 @@
 @import "sections/knowing-base/knowing-base";
 @import "sections/license-section/license-section";
 @import "sections/case-detail-section/case-detail-section";
+@import "sections/vacancy-section/vacancy-section";
+@import "sections/news-section/news-section";
+@import "sections/news-details-section/news-details-section";
+@import "sections/vacancy-details-section/vacancy-details-section";
 
 
 // pages

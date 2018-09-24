@@ -1,0 +1,18 @@
+include ../../items/text-item/text-item
+include ../../items/table-item/table-item
++b.SECTION.vacancy-section
+  .container
+    +e.H1.title Вакансии
+    +table-item("Москва")
+      +text-item("--mb")
+        +e.A.title(href="vacancy-details.html") Java developer
+        +e.info Технический департамент
+      +text-item("--mb")
+        +e.A.title(href="vacancy-details.html") Разработчик 1С
+        +e.info Технический департамент
+      +text-item("")
+        +e.A.title(href="vacancy-details.html") Senior Java developer
+        +e.info Технический департамент
+      +text-item("")
+        +e.A.title(href="vacancy-details.html") Devops инженер
+        +e.info Технический департамент

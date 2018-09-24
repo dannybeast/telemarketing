@@ -1,0 +1,43 @@
+.news-section{
+  margin-bottom: 80px;
+  &__title{
+    font-size: 41.5px;
+    font-weight: 300;
+    color: $black;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .table-item{
+    padding-bottom: 50px;
+    padding-top: 55px;
+  }
+  .text-item{
+    &__date{
+      margin-bottom: 22px;
+    }
+    &__title{
+      margin-bottom: 35px;
+    }
+    &__info{
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .news-section{
+    margin-bottom: 20px;
+    .table-item{
+      padding-top: 30px;
+      padding-bottom: 20px;
+      &__title{
+        font-size: 25px;
+      }
+    }
+    &__title{
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-size: 31.5px;
+    }
+  }
+}

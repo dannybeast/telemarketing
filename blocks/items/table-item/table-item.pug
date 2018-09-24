@@ -1,0 +1,7 @@
+mixin table-item(itemTitle)
+  +b.table-item
+    +e.left 
+      +e.title #{itemTitle}
+    +e.right
+      if block
+        block

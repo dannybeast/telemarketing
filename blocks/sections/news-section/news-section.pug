@@ -1,0 +1,19 @@
+include ../../items/text-item/text-item
+include ../../items/table-item/table-item
++b.SECTION.news-section
+  .container
+    +e.H1.title Новости
+    +table-item("2018")
+      +text-item("")
+        +e.date 16.05.2017
+        +e.A.title(href="news-details.html") Telemarketing4you присоединилась к GSMA
+        +e.info 16 мая 2017 мы провели онлайн-семинар, посвященный СМС маркетингу!
+      +text-item("")
+        +e.date 20.04.2017
+        +e.A.title(href="news-details.html") Онлайн-конференция: «Мобильная реклама»
+        +e.info Каждый раз, когда запускают неэффективную рекламу – где-то в мире плачет маленький котенок. Хватит это терпеть!
+    +table-item("2017")
+      +text-item("")
+        +e.date 16.05.2017
+        +e.A.title(href="#") SMS – информирование – основы и принципы! Онлайн-семинар, посвященный СМС маркетингу.
+        +e.info 16 мая 2017 мы провели онлайн-семинар, посвященный СМС маркетингу!

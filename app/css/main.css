@@ -2194,6 +2194,81 @@ footer {
 	margin: 17px;
 }
 
+.text-item__text-wrap {
+	padding-right: 20px;
+}
+
+.text-item__date {
+	font-size: 14px;
+	color: #929292;
+}
+
+.text-item--mb {
+	margin-bottom: 120px;
+}
+
+.text-item__title {
+	display: block;
+	max-width: 360px;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #1838e0;
+}
+
+.text-item .text-item__title:hover {
+	color: #000000;
+}
+
+.text-item__info {
+	display: block;
+	max-width: 375px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.table-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid #d2d2d2;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.table-item:last-child {
+	border-bottom: none;
+}
+
+.table-item__left {
+	width: 20%;
+	min-width: 200px;
+}
+
+.table-item__title {
+	font-size: 31px;
+	font-weight: 300;
+}
+
+.table-item__right {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+.table-item__right .text-item {
+	width: 50%;
+}
+
 .intro {
 	font-weight: 300;
 }
@@ -3249,6 +3324,159 @@ footer {
 }
 
 .case-detail-section .case-detail__text {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.vacancy-section {
+	margin-bottom: 80px;
+}
+
+.vacancy-section__title {
+	font-size: 41.5px;
+	font-weight: 300;
+	color: #000000;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.news-section {
+	margin-bottom: 80px;
+}
+
+.news-section__title {
+	font-size: 41.5px;
+	font-weight: 300;
+	color: #000000;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.news-section .table-item {
+	padding-bottom: 50px;
+	padding-top: 55px;
+}
+
+.news-section .text-item__date {
+	margin-bottom: 22px;
+}
+
+.news-section .text-item__title {
+	margin-bottom: 35px;
+}
+
+.news-section .text-item__info {
+	font-size: 16px;
+}
+
+.news-details-section .articles__left {
+	margin-right: 120px;
+	min-width: 240px;
+}
+
+.news-details-section .articles__left ul {
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.news-details-section .articles__left ul li.active a:hover {
+	color: #1838e0;
+}
+
+.news-details-section .articles__left ul li.active a span {
+	color: #1838e0;
+}
+
+.news-details-section .articles__left ul li:hover {
+	background: none;
+}
+
+.news-details-section .articles__left ul li a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #000000;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	padding: 16px 10px 16px 17px;
+}
+
+.news-details-section .articles__left ul li a span {
+	font-size: 14px;
+	margin-top: 19px;
+	color: #929292;
+}
+
+.news-details-section .news-details__title {
+	font-size: 31px;
+	font-weight: 300;
+	color: #000000;
+	margin-top: 17px;
+	margin-bottom: 50px;
+}
+
+.news-details-section .news-details__date {
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	color: #929292;
+	margin-bottom: 50px;
+}
+
+.news-details-section .news-details img {
+	margin: 0 0 50px;
+}
+
+.news-details-section .news-details__text {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.vacancy-details-section .articles__left {
+	min-width: 236px;
+	margin-right: 40px;
+}
+
+.vacancy-details-section .articles__left ul li.active a {
+	font-weight: 400;
+}
+
+.vacancy-details-section .articles__left ul li a {
+	color: #1838e0;
+}
+
+.vacancy-details-section .articles__left ul li a:hover {
+	color: #000000;
+}
+
+.vacancy-details-section .vacancy-details__title {
+	font-size: 31px;
+	font-weight: 300;
+	color: #000000;
+	margin-top: 17px;
+	margin-bottom: 55px;
+}
+
+.vacancy-details-section .vacancy-details img {
+	margin-top: 20px;
+	margin-bottom: 58px;
+	width: 100%;
+}
+
+.vacancy-details-section .vacancy-details__text {
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 300;
@@ -7117,9 +7345,69 @@ footer {
 	width: 50%;
 }
 
+.vacancy-section {
+	margin-bottom: 20px;
+}
+
+.vacancy-section .table-item {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.vacancy-section .table-item__title {
+	font-size: 25px;
+}
+
+.vacancy-section__title {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-size: 31.5px;
+}
+
+.news-section {
+	margin-bottom: 20px;
+}
+
+.news-section .table-item {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.news-section .table-item__title {
+	font-size: 25px;
+}
+
+.news-section__title {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-size: 31.5px;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
+
+.table-item {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.table-item__right {
+	width: 100%;
+}
+
+.table-item__right .text-item {
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.table-item__right .text-item__text-wrap {
+	padding-right: 0;
+}
 
 .info-card-section__title {
 	font-size: 31.5px;
@@ -7135,6 +7423,20 @@ footer {
 
 .license-section .articles__right img {
 	width: 100%;
+}
+
+.news-details-section .articles__left {
+	min-width: none;
+	margin: 0;
+}
+
+.news-details-section .news-details img {
+	width: 100%;
+}
+
+.vacancy-details-section .articles__left {
+	min-width: none;
+	margin: 0;
 }
 
 }
