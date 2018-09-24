@@ -1,0 +1,17 @@
+.license-section{
+  .left-bar-item{
+    &__left{
+      min-width: 305px;
+      max-width: 305px;
+    }
+    &__right{
+      justify-content: center;
+      img{
+        margin-bottom: 40px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

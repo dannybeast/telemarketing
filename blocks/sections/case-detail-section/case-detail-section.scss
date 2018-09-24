@@ -1,0 +1,10 @@
+.case-detail-section{
+  .case-detail{
+    &__title{
+      font-size: 31px;
+      font-weight: 300;
+      color: $black;
+      margin-bottom: 55px;
+    }
+  }
+}

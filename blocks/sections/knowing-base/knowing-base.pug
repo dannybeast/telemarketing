@@ -1,6 +1,7 @@
 mixin knowing-base(sectionTitle)
   +b.SECTION.knowing-base
     .container
-      +e.title #{sectionTitle}
+      if #{sectionTitle}
+        +e.title #{sectionTitle}
       if block
         block

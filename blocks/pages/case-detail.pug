@@ -1,0 +1,22 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/knowing-base/knowing-base
+include ../items/left-bar-item/left-bar-item
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Телемаркетинг Онлайн";
+  - var pageDescription = ""
+  - var pageName = "telemarketing-online"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="index.html") Главная
+      span.separator /
+      a(href="#") Компания
+      span.separator /
+      a(href="#") Кейсы
+      span.separator /
+      a(href="#") Техносила
+    include ../sections/case-detail-section/case-detail-section
