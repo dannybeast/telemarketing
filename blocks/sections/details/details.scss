@@ -76,6 +76,7 @@
       margin-bottom: 40px;
       li{
         margin-left: -19px;
+        margin-bottom: 12px;
         padding-left: 19px;
         position: relative;
         &::before{
@@ -104,6 +105,18 @@
     font-size: 13px;
     p{
       margin-bottom: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .details{
+    &__info{
+      ul{
+        li{
+          margin-left: 0;
+        }
+      }
     }
   }
 }

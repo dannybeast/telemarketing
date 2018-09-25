@@ -2773,6 +2773,7 @@ footer {
 
 .details__info ul li {
 	margin-left: -19px;
+	margin-bottom: 12px;
 	padding-left: 19px;
 	position: relative;
 }
@@ -7042,6 +7043,14 @@ footer {
 .ml-xl-auto,
 .mx-xl-auto {
 	margin-left: auto !important;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.details__info ul li {
+	margin-left: 0;
 }
 
 }
