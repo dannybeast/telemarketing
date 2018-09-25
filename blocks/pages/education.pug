@@ -4,17 +4,17 @@ include ../sections/breadcrumbs/breadcrumbs
 
 block variables 
   - var pageClass = '';
-  - var pageTitle = "Вакансии";
+  - var pageTitle = "Telemarketing4you Education";
   - var pageDescription = "Описание страницы"
-  - var pageName = "vacancy"
+  - var pageName = "education"
 
 block content
   +b.MAIN(role='main')
     +breadcrumbs
       a(href="index.html") Главная 
       span.separator /
-      a(href="#") Компания
+      a(href="#") База знаний
       span.separator /
-      a(href="#") Вакансии
+      a(href="#") Telemarketing4you Education
 
-    include ../sections/vacancy-section/vacancy-section
+    include ../sections/education-section/education-section
