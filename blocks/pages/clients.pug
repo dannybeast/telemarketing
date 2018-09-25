@@ -1,0 +1,20 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Клиенты";
+  - var pageDescription = "Описание страницы"
+  - var pageName = "clients"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="index.html") Главная 
+      span.separator /
+      a(href="#") Компания
+      span.separator /
+      a(href="#") Клиенты
+
+    include ../sections/clients-section/clients-section
