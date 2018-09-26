@@ -1,5 +1,6 @@
 extends ../layout/layout
 include ../sections/intro-banner/intro-banner
+include ../sections/partners/partners
 
 block variables 
   - var pageClass = '';
@@ -23,7 +24,31 @@ block content
     include ../sections/potential/potential
     include ../sections/analytics/analytics
     include ../sections/leader/leader
-    include ../sections/partners/partners
+    +partners("С нами работают","--gray")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/1.jpg", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/2.png", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/3.jpg", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/4.png", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/5.png", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/6.png", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/7.png", alt="")
+      +e.LI.item
+        +e.A(href="#", target="_blank")
+          img(src="img/partners/8.png", alt="")
     +intro-banner("img/index-img4.jpg", "crm-world-club.html", "--black", "marker")
       +e.H3.text Cообщество 
         br
