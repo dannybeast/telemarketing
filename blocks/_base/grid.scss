@@ -33,12 +33,45 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
 
 // END of Grid Options
+*{
+        box-sizing: border-box;
+}
+.container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
+@media only screen and  (min-width: 576px) {
+.container {
+        max-width: 540px;
+}
+}
+
+@media only screen and  (min-width: 768px) {
+.container {
+        max-width: 720px;
+}
+}
+
+@media only screen and  (min-width: 992px) {
+.container {
+        max-width: 960px;
+}
+}
+
+@media only screen and  (min-width: 1200px) {
+.container {
+        max-width: 1140px;
+}
+}
 
 // Bootstrap file imports
-@import "../node_modules/bootstrap-4-grid/scss/breakpoints/mixins/breakpoints";
-@import "../node_modules/bootstrap-4-grid/scss/grid/bootstrap-grid";
-@import "../node_modules/bootstrap-4-grid/scss/sizing/utilities/sizing";
-@import "../node_modules/bootstrap-4-grid/scss/layout/utilities/spacing";
-@import "../node_modules/bootstrap-4-grid/scss/layout/mixins/visibility";
-@import "../node_modules/bootstrap-4-grid/scss/layout/utilities/visibility";
+// @import "../node_modules/bootstrap-4-grid/scss/breakpoints/mixins/breakpoints";
+// @import "../node_modules/bootstrap-4-grid/scss/grid/bootstrap-grid";
+// @import "../node_modules/bootstrap-4-grid/scss/sizing/utilities/sizing";
+// @import "../node_modules/bootstrap-4-grid/scss/layout/utilities/spacing";
+// @import "../node_modules/bootstrap-4-grid/scss/layout/mixins/visibility";
+// @import "../node_modules/bootstrap-4-grid/scss/layout/utilities/visibility";
