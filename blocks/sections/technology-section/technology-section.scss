@@ -1,0 +1,40 @@
+.technology-section{
+  .articles{
+    &__left{
+      ul{
+        li{
+          a{
+            color: $white;
+          }
+        }
+      }
+      background-color: $azul;
+    }
+    .articles__left{
+      position: relative;
+      &:before{
+        content: '';
+        width: 99999px;
+        height: 100%;
+        position: absolute;
+        background: $azul;
+        right: 100%;
+      }
+    }
+    &__right{
+      margin: 0;
+      margin-left: 70px;
+    }
+    &__title{
+      font-size: 41.5px;
+      font-weight: 300;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    &__text{
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+  }
+}

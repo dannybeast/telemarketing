@@ -3653,6 +3653,45 @@ footer {
 	width: 100%;
 }
 
+.technology-section .articles__left {
+	background-color: #1838e0;
+}
+
+.technology-section .articles__left ul li a {
+	color: #fff;
+}
+
+.technology-section .articles .articles__left {
+	position: relative;
+}
+
+.technology-section .articles .articles__left:before {
+	content: '';
+	width: 99999px;
+	height: 100%;
+	position: absolute;
+	background: #1838e0;
+	right: 100%;
+}
+
+.technology-section .articles__right {
+	margin: 0;
+	margin-left: 70px;
+}
+
+.technology-section .articles__title {
+	font-size: 41.5px;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.technology-section .articles__text {
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
 @media (min-width: 576px) {
 
 .container {
