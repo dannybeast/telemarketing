@@ -1,28 +1,16 @@
-+b.SECTION.partners
-  .container
-    +e.H2.title С нами работают
-    +e.UL.list
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/1.jpg", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/2.png", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/3.jpg", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/4.png", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/5.png", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/6.png", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/7.png", alt="")
-      +e.LI.item
-        +e.A(href="#", target="_blank")
-          img(src="img/partners/8.png", alt="")
+mixin partners(sectionTitle,sectionClass)
+  +b.SECTION.partners(class=sectionClass)
+    if sectionClass
+      .container
+        if sectionTitle
+          +e.H2.title #{sectionTitle}
+        +e.UL.list
+          if block
+            block
+    else
+      if sectionTitle
+        +e.H2.title #{sectionTitle}
+      +e.UL.list
+        if block
+          block
+        
