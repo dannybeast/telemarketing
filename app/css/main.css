@@ -2170,7 +2170,7 @@ footer {
 	font-weight: 300;
 	color: #929292;
 	width: 100%;
-	padding: 10px 10px 10px 17px;
+	padding: 15px 10px 15px 25px;
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
@@ -2183,9 +2183,7 @@ footer {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: -17px;
-	width: -webkit-calc(100% + 34px);
-	width: calc(100% + 34px);
+	width: 100%;
 	margin-bottom: auto;
 }
 
@@ -2746,6 +2744,14 @@ footer {
 
 .details__info h3 {
 	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.details__info h2,
+.details__info h4 {
+	font-size: 24px;
+	margin-bottom: 30px;
 }
 
 .details__info img {
@@ -2789,6 +2795,19 @@ footer {
 	left: 0;
 	top: -webkit-calc(50% - 3px);
 	top: calc(50% - 3px);
+}
+
+.details__info .social ul {
+	margin: 0;
+}
+
+.details__info .social ul li {
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+
+.details__info .social ul li:before {
+	display: none;
 }
 
 .details__red {
@@ -3221,7 +3240,7 @@ footer {
 }
 
 .info-card-section .left-intro-item {
-	margin-bottom: 53px;
+	margin-bottom: 90px;
 }
 
 .events__title {
@@ -3351,26 +3370,26 @@ footer {
 	margin-bottom: 0;
 }
 
+.case-detail-section .details__info {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.case-detail-section .details__info p {
+	width: 100%;
+}
+
 .case-detail-section .case-detail__title {
 	font-size: 31px;
 	font-weight: 300;
 	color: #000000;
-	margin-top: 17px;
-	margin-bottom: 55px;
+	margin-bottom: 45px;
 }
 
 .case-detail-section .case-detail img {
 	margin-top: 20px;
 	margin-bottom: 58px;
 	width: 100%;
-}
-
-.case-detail-section .case-detail__text {
-	font-size: 20px;
-	line-height: 30px;
-	font-weight: 300;
-	color: #000000;
-	margin-bottom: 40px;
 }
 
 .vacancy-section {
@@ -3479,12 +3498,13 @@ footer {
 	margin: 0 0 50px;
 }
 
-.news-details-section .news-details__text {
-	font-size: 20px;
-	line-height: 30px;
-	font-weight: 300;
-	color: #000000;
-	margin-bottom: 40px;
+.news-details-section .details__info {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.news-details-section .details__info p {
+	width: 100%;
 }
 
 .vacancy-details-section .articles__left {
@@ -3509,7 +3529,7 @@ footer {
 	font-weight: 300;
 	color: #000000;
 	margin-top: 17px;
-	margin-bottom: 55px;
+	margin-bottom: 45px;
 }
 
 .vacancy-details-section .vacancy-details img {
@@ -3518,102 +3538,12 @@ footer {
 	width: 100%;
 }
 
-.vacancy-details-section .vacancy-details__text {
-	font-size: 20px;
-	line-height: 30px;
-	font-weight: 300;
-	color: #000000;
-	margin-bottom: 40px;
+.vacancy-details-section .details__info {
+	padding-top: 30px;
 }
 
-.education-details-section .articles__left {
-	margin-right: 120px;
-	min-width: 240px;
-}
-
-.education-details-section .articles__left ul {
-	border-bottom: 1px solid #d2d2d2;
-}
-
-.education-details-section .articles__left ul li.active a:hover {
-	color: #1838e0;
-}
-
-.education-details-section .articles__left ul li.active a span {
-	color: #1838e0;
-}
-
-.education-details-section .articles__left ul li:hover {
-	background: none;
-}
-
-.education-details-section .articles__left ul li a {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	color: #000000;
-	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-	padding: 16px 10px 16px 17px;
-}
-
-.education-details-section .articles__left ul li a span {
-	font-size: 14px;
-	margin-top: 19px;
-	color: #929292;
-}
-
-.education-details-section .education-details__title {
-	font-size: 41.5px;
-	line-height: 58.5px;
-	font-weight: 300;
-	color: #000000;
-	margin-top: 17px;
-	margin-bottom: 50px;
-}
-
-.education-details-section .education-details__date {
-	display: block;
-	font-size: 14px;
-	font-weight: 300;
-	color: #929292;
-	margin-bottom: 50px;
-}
-
-.education-details-section .education-details img {
-	margin: 0 0 50px;
-}
-
-.education-details-section .education-details__video {
-	margin-bottom: 26px;
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0;
-}
-
-.education-details-section .education-details__video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
+.vacancy-details-section .details__info p {
 	width: 100%;
-	height: 100%;
-}
-
-.education-details-section .education-details__text {
-	font-size: 20px;
-	line-height: 30px;
-	font-weight: 300;
-	color: #000000;
-	margin-bottom: 40px;
 }
 
 .clients-section {
@@ -3651,6 +3581,7 @@ footer {
 }
 
 .technology-section .articles__left {
+	padding-top: 75px;
 	background-color: #1838e0;
 }
 
@@ -3669,6 +3600,32 @@ footer {
 	position: absolute;
 	background: #1838e0;
 	right: 100%;
+	top: 0;
+}
+
+.technology-section .articles .articles__left li {
+	min-height: auto;
+}
+
+.technology-section .articles .articles__left li.active {
+	border-color: #fff;
+}
+
+.technology-section .articles .articles__left li.title {
+	color: #fff;
+	padding: 14px 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.technology-section .articles .articles__left li:hover {
+	background: #4565e9;
+}
+
+.technology-section .articles .articles__left li a {
+	padding: 14px 18px;
 }
 
 .technology-section .articles__right {
@@ -3683,10 +3640,12 @@ footer {
 	margin-bottom: 60px;
 }
 
-.technology-section .articles__text {
-	font-size: 20px;
-	font-weight: 300;
-	margin-bottom: 40px;
+.technology-section .articles .details__info {
+	padding-top: 30px;
+}
+
+.technology-section .articles .details__info p {
+	width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -7127,6 +7086,10 @@ footer {
 	margin-left: 0;
 }
 
+.case-detail-section .articles__right {
+	margin: 0;
+}
+
 }
 
 @media only screen and (max-width: 1180px) {
@@ -7551,6 +7514,10 @@ footer {
 	margin-bottom: 100px;
 }
 
+.info-card-section .left-intro-item {
+	margin-bottom: 60px;
+}
+
 .past-events__row .card-wrap {
 	width: -webkit-calc(50% - 35px);
 	width: calc(50% - 35px);
@@ -7558,6 +7525,16 @@ footer {
 
 .expert-section__row .picture-item {
 	width: 50%;
+}
+
+.knowing-base {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.case-detail-section .details__info {
+	padding-top: 0;
+	padding-bottom: 30px;
 }
 
 .vacancy-section {
@@ -7598,6 +7575,23 @@ footer {
 	font-size: 31.5px;
 }
 
+.news-details-section .news-details__title {
+	margin-top: 0;
+}
+
+.news-details-section .details__info {
+	padding-top: 0;
+}
+
+.vacancy-details-section .vacancy-details__title {
+	margin-top: 0;
+}
+
+.vacancy-details-section .details__info {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+
 .clients-section {
 	margin-bottom: 50px;
 }
@@ -7624,6 +7618,27 @@ footer {
 .clients-section__info {
 	font-size: 14px;
 	margin-bottom: 30px;
+}
+
+.technology-section .articles__title {
+	font-size: 31.5px;
+	margin-top: 0;
+	margin-bottom: 45px;
+}
+
+.technology-section .articles .details__info {
+	padding-bottom: 30px;
+}
+
+.technology-section .articles__left {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-right: -15px;
+}
+
+.technology-section .articles__right {
+	margin: 0;
+	width: 100%;
 }
 
 }
@@ -7666,29 +7681,27 @@ footer {
 
 .news-details-section .articles__left {
 	min-width: none;
-	margin: 0;
+}
+
+.news-details-section .news-details__title {
+	margin-bottom: 15px;
+}
+
+.news-details-section .news-details__date {
+	margin-bottom: 20px;
 }
 
 .news-details-section .news-details img {
-	width: 100%;
+	max-width: 100%;
+}
+
+.vacancy-details-section .articles__right {
+	margin-top: 0;
 }
 
 .vacancy-details-section .articles__left {
 	min-width: none;
 	margin: 0;
-}
-
-.education-details-section .articles__left {
-	min-width: none;
-	margin: 0;
-}
-
-.education-details-section .education-details__title {
-	font-size: 31.5px;
-}
-
-.education-details-section .education-details img {
-	width: 100%;
 }
 
 }
@@ -7726,6 +7739,16 @@ footer {
 .left-intro-item__description {
 	font-size: 16px;
 	line-height: 1.5;
+}
+
+.link-item {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+
+.link-item__link-name {
+	max-width: 100%;
 }
 
 .intro__main-title {
@@ -7979,17 +8002,16 @@ footer {
 
 @media only screen and (max-width: 762px) {
 
-.articles__right {
-	margin-top: 20px;
-}
-
 .articles__right .link-item {
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
 	width: 100%;
 }
 
 .knowing-base {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .knowing-base__title {

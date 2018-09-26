@@ -1,6 +1,7 @@
 .technology-section{
   .articles{
     &__left{
+      padding-top: 75px;
       ul{
         li{
           a{
@@ -19,11 +20,33 @@
         position: absolute;
         background: $azul;
         right: 100%;
+        top: 0;
+      }
+      li{
+        min-height: auto;
+        &.active{
+          border-color:#fff;
+        }
+        &.title{
+          color:#fff;
+          padding: 14px 10px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+        &:hover{
+          background: #4565e9;
+        }
+        a{
+          padding: 14px 18px;
+        }
       }
     }
     &__right{
       margin: 0;
       margin-left: 70px;
+      
     }
     &__title{
       font-size: 41.5px;
@@ -31,10 +54,37 @@
       margin-top: 40px;
       margin-bottom: 60px;
     }
-    &__text{
-      font-size: 20px;
-      font-weight: 300;
-      margin-bottom: 40px;
+    .details__info{
+      padding-top: 30px;
+      p{
+        width: 100%;
+      }
     }
   }
+}
+
+@media only screen and (max-width:992px){
+  .technology-section{
+    .articles{
+      &__title{
+        font-size: 31.5px;
+        margin-top: 0;
+        margin-bottom: 45px;
+      }
+      .details__info{
+        padding-bottom: 30px;
+      }
+      &__left{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-right: -15px;
+      }
+      &__right{
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+  }
+
 }
