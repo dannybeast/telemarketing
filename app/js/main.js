@@ -36,8 +36,6 @@ $(document).ready(function(){
   // tabs
   $('.tabs').tabs();
 
-  // map
-
 	// map
 	$('.b-map').each(function (index, el) {
     var adr = $(this).attr('data-address-for-map');
@@ -93,6 +91,34 @@ $(document).ready(function(){
       btn_text == "Закрыть форму" ? btn_text_attr : "Закрыть форму");
 
   });
+
+
+  // calc
+
+    var numbers = [["5","4999","0,65"],["5000","24999","0,55"],["25000","49999","0,5"],["50000","99999","0,4"],["100000","249999","0,35"],["250000","499999","0,25"],["500000","999999","0,2"]];
+    var operator = ["1","1","1","1","1"];
+    $('#slider-block .max').html(numbers[numbers.length-1][1].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ")+' +');
+    $('#slider-block .min').html(numbers[0][0].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 "));
+
+    function SliderNumbers (curVal) {
+    for (var i = 0; i < numbers.length; i++)
+      if (curVal >= numbers[i][0] && curVal <= numbers[i][1])
+      $("#cost").find("span").text(numbers[i][2]);
+    }
+    $("#slider-range").slider({
+    value: numbers[0][0]*1,
+    min: numbers[0][0]*1,
+    max: numbers[numbers.length-1][1]*1,
+    step: 1000,
+    slide: function( event, ui ) {
+        SliderNumbers (ui.value);
+        $( ".ui-slider-handle" ).html("<div id='slider-value'> " + ui.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ") + " <span>запросов</span><div>");
+      },
+    });
+
+    SliderNumbers($("#slider-range").slider("value"));
+    $( ".ui-slider-handle" ).html("<div id='slider-value'> " + $("#slider-range").slider("value").toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ") + " <span>запросов</span><div>");
+
 
   // input masks
   $('.js-phone-mask').inputmask("mask", {"mask": "+7 (999) 999-99-99", 'placeholder':'+7 (___) ___-__-__'});

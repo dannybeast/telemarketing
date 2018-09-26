@@ -1,0 +1,51 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/advantages/advantages
+include ../sections/service-intro/service-intro
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Cервис аутентификации IMSI";
+  - var pageDescription = ""
+  - var pageName = "auth-imsi"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="index.html") Главная
+      span.separator /
+      a(href="#") Услуги
+      span.separator /
+      a(href="#") Cервис аутентификации IMSI
+      span.separator /
+      a(href="#") Подробнее об услуге
+    .container
+      .details__info
+        p Услуга аутентификации абонента мобильной связи стандарта GSM в системах Банк-Клиент. International Mobile Subscriber Identity (IMSI) — международный идентификатор мобильного абонента, ассоциированный с каждым пользователем мобильной связи стандарта GSM, UMTS или CDMA. <a href="#">Скачать презентацию>>></a>
+        p Тарифы на отправку IMSI-запроса
+
+        table.table
+          tr
+            td  От
+            td Стоимость (руб.)
+          tr
+            td 5 000
+            td 0.55
+          tr
+            td 25 000
+            td 0.5
+          tr
+            td 50 000
+            td 0.4
+          tr
+            td 100 000
+            td 0.35
+          tr
+            td 250 000
+            td 0.25
+          tr
+            td 500 000
+            td 0.2
+          tr
+            td 1 000 000
+            td 0.15

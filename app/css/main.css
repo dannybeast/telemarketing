@@ -1826,6 +1826,11 @@ footer {
 	color: #8a8a8a;
 }
 
+.table tr td {
+	padding: 15px;
+	border: solid 1px #dbdbdb;
+}
+
 .gray-item {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -2329,6 +2334,115 @@ footer {
 .intro__main-title span {
 	color: #999999;
 	display: block;
+}
+
+.calc {
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.calc__title {
+	font-size: 31.5px;
+	font-weight: 300;
+	color: #000000;
+	margin: 0 0 130px 0;
+	text-align: center;
+}
+
+.calc__title--big {
+	font-size: 40px;
+}
+
+.calc #slider-block {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	max-width: 805px;
+	width: 100%;
+}
+
+.calc #slider-block .min {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #b2b2b2;
+}
+
+.calc #slider-block .max {
+	position: absolute;
+	right: 0;
+	top: -10px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #b2b2b2;
+}
+
+.calc__result {
+	font-size: 84px;
+	font-weight: 100;
+	margin-bottom: 70px;
+	margin-top: 90px;
+}
+
+.calc__link {
+	font-size: 20px;
+}
+
+.calc #slider-range {
+	position: relative;
+	padding-top: 0;
+	height: 2px;
+	width: -webkit-calc(100% - 150px);
+	width: calc(100% - 150px);
+	background: #ddd;
+	border-radius: 4px;
+	margin-left: 30px;
+}
+
+.calc #slider-value {
+	margin-top: -45px;
+	margin-left: -150px;
+	margin-right: -150px;
+	text-align: center;
+	font-size: 22px;
+	height: 25px;
+	text-decoration: none;
+	background-color: #fff;
+	color: #000000;
+	font-weight: 400;
+}
+
+.calc #slider-value span {
+	font-size: 14px;
+}
+
+.calc .ui-slider .ui-slider-handle {
+	width: 42px;
+	height: 36px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: #fff;
+	text-decoration: none;
+	top: -17px;
+	position: absolute;
+	margin-left: -.6em;
+	cursor: pointer;
+}
+
+.calc .ui-slider .ui-slider-handle:after {
+	border: 2px solid #173ee3;
+	background-color: #fff;
+	content: ' ';
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 18px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 0;
 }
 
 .analytics__title-block {
@@ -7862,6 +7976,31 @@ footer {
 .intro__main-title {
 	font-size: 36px;
 	line-height: 1.43;
+}
+
+.calc__result {
+	font-size: 40.5px;
+}
+
+.calc #slider-range {
+	width: -webkit-calc(100% - 30px);
+	width: calc(100% - 30px);
+	margin: 0 auto;
+}
+
+.calc #slider-block .min {
+	left: 15px;
+}
+
+.calc #slider-block .max {
+	right: 15px;
+}
+
+.calc #slider-block .min,
+.calc #slider-block .max {
+	top: 100%;
+	font-size: 14px;
+	margin-top: 25px;
 }
 
 .analytics__item {
