@@ -36,6 +36,36 @@ $(document).ready(function(){
   // tabs
   $('.tabs').tabs();
 
+  // map
+
+	// map
+	$('.b-map').each(function (index, el) {
+    var adr = $(this).attr('data-address-for-map');
+
+    function init() {
+        var myGeocoder = ymaps.geocode(adr);
+        myGeocoder.then(
+            function (res) {
+                var coord = res.geoObjects.get(0).geometry.getCoordinates();
+                var myMap = new ymaps.Map(el, {
+                    center: coord,
+                    zoom: 16
+                });
+                myMap.controls.add(
+                    new ymaps.control.ZoomControl()
+                );
+                myPlacemark = new ymaps.Placemark(coord, {
+                    balloonContentHeader: adr
+                });
+                myMap.geoObjects.add(myPlacemark);
+            },
+            function (err) {
+               
+            }
+        );
+    }
+    ymaps.ready(init);
+});
 
   // input
   $(".input-block input").focus(function(){

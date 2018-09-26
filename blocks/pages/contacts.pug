@@ -1,0 +1,132 @@
+extends ../layout/layout
+include ../sections/breadcrumbs/breadcrumbs
+include ../sections/knowing-base/knowing-base
+include ../items/link-item/link-item
+include ../items/articles/articles
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Контакты";
+  - var pageDescription = ""
+  - var pageName = "contacts"
+
+block content
+  +b.MAIN(role='main')
+    +breadcrumbs
+      a(href="index.html") Главная
+      span.separator /
+      a(href="#") Контакты
+
+    +knowing-base("Контакты")
+      +articles("contacts tabs")
+        +e.left
+          ul
+            li
+              a(href="#t1") Россия, Краснодар
+            li
+              a(href="#t2") Украина, Киев
+            li
+              a(href="#t3") Беларусь, Минск
+            li
+              a(href="#t4") Казахстан, Алматы
+
+        +e.right
+          div.tab-content#t1
+            div(class="b-map", data-address-for-map="г. Краснодар, ул. Новокузнечная, д.67")
+            h3.contacts__title ул. Театральная аллея, 3с1, Москва, 125167
+
+            +b.departments
+              +e.row
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+
+            +b.contacts__text.text
+              p ООО «Телемаркетинг ФО Ю»
+              p Юридический адрес: 109443, г. Москва, ул. Юных Ленинцев , дом № 83, корпус 4, офис 41
+              p Код ОКПО: 68094610
+              p Код ОГРН: 1107746769162
+              p ИНН/КПП: 7715829230/772101001
+              p Банк: ОАО «АЛЬФА-БАНК» БИК: 044525593
+              p Р/с: 40702810901600001312
+              p К/с: 30101810200000000593
+          
+          div.tab-content#t2
+            div(class="b-map", data-address-for-map="ул. Льва Толстого д. 15-б, Киев, 03150")
+            h3.contacts__title ул. Льва Толстого д. 15-б, Киев, 03150
+
+            +b.departments
+              +e.row
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+
+            +b.contacts__text.text
+              p ООО «Телемаркетинг ФО Ю»
+              p Юридический адрес: 109443, г. Москва, ул. Юных Ленинцев , дом № 83, корпус 4, офис 41
+              p Код ОКПО: 68094610
+              p Код ОГРН: 1107746769162
+              p ИНН/КПП: 7715829230/772101001
+              p Банк: ОАО «АЛЬФА-БАНК» БИК: 044525593
+              p Р/с: 40702810901600001312
+              p К/с: 30101810200000000593
+
+          div.tab-content#t3
+            div(class="b-map", data-address-for-map="ул. Тимирязева - 65Б, офис 512, Минск, 220035")
+            h3.contacts__title ул. Тимирязева - 65Б, офис 512, Минск, 220035
+
+            +b.departments
+              +e.row
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+
+            +b.contacts__text.text
+              p ООО «Телемаркетинг ФО Ю»
+              p Юридический адрес: 109443, г. Москва, ул. Юных Ленинцев , дом № 83, корпус 4, офис 41
+              p Код ОКПО: 68094610
+              p Код ОГРН: 1107746769162
+              p ИНН/КПП: 7715829230/772101001
+              p Банк: ОАО «АЛЬФА-БАНК» БИК: 044525593
+              p Р/с: 40702810901600001312
+              p К/с: 30101810200000000593
+
+          div.tab-content#t4
+            div(class="b-map", data-address-for-map="ул. Льва Толстого д. 15-б, Киев, 03150")
+            h3.contacts__title ул. Льва Толстого д. 15-б, Киев, 03150
+
+            +b.departments
+              +e.row
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+                +b.department
+                  +e.P.name Отдел продаж <span>с 9:00 до 18:00 пн-пт</span>
+                  +e.P.phones +7 (495) 646-00-54, 8-800-555-00-54
+                  +e.A(href="mailto:sales@telemarketing4you.com", class="mail") sales@telemarketing4you.com
+
+            +b.contacts__text.text
+              p ООО «Телемаркетинг ФО Ю»
+              p Юридический адрес: 109443, г. Москва, ул. Юных Ленинцев , дом № 83, корпус 4, офис 41
+              p Код ОКПО: 68094610
+              p Код ОГРН: 1107746769162
+              p ИНН/КПП: 7715829230/772101001
+              p Банк: ОАО «АЛЬФА-БАНК» БИК: 044525593
+              p Р/с: 40702810901600001312
+              p К/с: 30101810200000000593
