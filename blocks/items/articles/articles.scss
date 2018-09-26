@@ -42,8 +42,8 @@
   &__right{
     display: flex;
     flex-wrap: wrap;
-    margin: -17px;
-    width: calc(100% + 34px);
+   
+    width: 100%;
     margin-bottom: auto;
     .link-item{
       width: calc(50% - 34px);
@@ -70,9 +70,7 @@
 
 @media only screen and (max-width: 762px){
   .articles{
-    &__right{
-      margin-top: 20px;
-    }
+
     &__right{
       
       .link-item{

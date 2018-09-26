@@ -26,25 +26,42 @@
       font-weight: 300;
       color: $black;
       margin-top: 17px;
-      margin-bottom: 55px;
+      margin-bottom: 45px;
     }
     img{
       margin-top: 20px;
       margin-bottom: 58px;
       width: 100%;
     }
-    &__text{
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 300;
-      color: $black;
-      margin-bottom: 40px;
+  }
+  .details__info{
+    padding-top: 30px;
+    p{
+      width: 100%;
     }
   }
 }
 
+
+@media only screen and (max-width: 992px){
+  .vacancy-details-section{
+    .vacancy-details{
+      &__title{
+        margin-top: 0;
+      }
+    }
+    .details__info{
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+
+  }
+}
 @media only screen and (max-width: 768px){
   .vacancy-details-section{
+    .articles__right{
+      margin-top: 0;
+    }
     .articles{
       &__left{
         min-width: none;
