@@ -1,4 +1,5 @@
 .text-item{
+  margin-bottom: 120px;
   &__text-wrap{
     padding-right: 20px;
   }
@@ -6,9 +7,7 @@
     font-size: 14px;
     color: $warm-grey-five;
   }
-  &--mb{
-    margin-bottom: 120px;
-  }
+
   &__title{
     display: block;
     max-width: 360px;

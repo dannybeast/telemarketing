@@ -24,12 +24,12 @@
   .license-section{
     .articles{
       &__right{
-        margin-top: 40px;
+        
         .container{
           display: block;
         }
         img{
-          width: 100%;
+          max-width: 100%;
         }
       }
     }

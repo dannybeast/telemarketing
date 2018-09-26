@@ -5,7 +5,7 @@ mixin info-item(link, child)
           if block
             block
   else
-    +b.A.info-item(href="#")
+    +b.A.info-item(href=link)
       +e.item-wrap
         if block
           block

@@ -3,6 +3,7 @@
   &__left{
     min-width: 294px;
     max-width: 294px;
+    padding-right: 30px;
     ul{
       
       li{
@@ -55,11 +56,14 @@
   .articles{
     flex-direction: column;
     &__left{
-      
-    max-width: none;
-    }
-    &__right{
+      padding-right: 0;
+      max-width: none;
+      order:2;
       margin-top: 40px;
+    }
+
+    &__right{
+      
     }
   }
 }
@@ -68,6 +72,9 @@
   .articles{
     &__right{
       margin-top: 20px;
+    }
+    &__right{
+      
       .link-item{
         width: 100%;
       }
